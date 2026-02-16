@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>网易云音乐一站式工作台</title>
+  <HTA:APPLICATION
+    ID="NCMWorkbench"
+    APPLICATIONNAME="网易云音乐一站式工作台"
+    BORDER="thin"
+    BORDERSTYLE="normal"
+    CAPTION="yes"
+    SHOWINTASKBAR="yes"
+    SINGLEINSTANCE="yes"
+    SYSMENU="yes"
+    WINDOWSTATE="normal"
+    SCROLL="no"
+  />
+  <style>
+    :root {
+      --bg: #f4f4f6;
+      --panel: #ffffff;
+      --text: #1d1d1f;
+      --sub: #6e6e73;
+      --line: #d2d2d7;
+      --accent: #d12d3f;
+      --accent-hover: #bf2738;
+      --accent-active: #a82130;
+      --ok: #177245;
+      --warn: #9a6700;
+      --shadow: 0 22px 48px rgba(0,0,0,.09);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      height: 100%;
+      font-family: "SF Pro Text", "Segoe UI", "PingFang SC", "Microsoft YaHei UI", sans-serif;
+      background: linear-gradient(180deg, #fafafc 0%, var(--bg) 70%);
+      color: var(--text);
+    }
+
+    .app {
+      max-width: 1120px;
+      margin: 30px auto;
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .header {
+      padding: 24px 26px 10px;
+      border-bottom: 1px solid #ececf0;
+      display: none;
+    }
+
+    .title {
+      margin: 0;
+      font-size: 34px;
+      letter-spacing: .2px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      margin: 8px 0 0;
+      color: var(--sub);
+      font-size: 14px;
+    }
+
+    .body {
+      padding: 36px;
+      display: grid;
+      gap: 22px;
+    }
+
+    .card {
+      border: 1px solid #ececf0;
+      border-radius: 22px;
+      background: #fff;
+      padding: 30px;
+    }
+
+    .path {
+      width: 100%;
+      height: 88px;
+      border: 2px solid #c9c9cf;
+      border-radius: 18px;
+      font-size: 36px;
+      font-weight: 500;
+      padding: 0 22px;
+      outline: none;
+      color: #3a3a3c;
+    }
+
+    .path::placeholder {
+      color: #9a9aa1;
+      font-size: 33px;
+      font-weight: 400;
+    }
+
+    .path:focus {
+      border-color: #8f8f95;
+      box-shadow: 0 0 0 7px rgba(180, 35, 58, .08);
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 24px;
+      width: 100%;
+    }
+
+    .btn-circle {
+      width: 260px;
+      height: 260px;
+      border-radius: 1000px;
+      border: 5px solid #9a9aa3;
+      background: radial-gradient(circle at 35% 22%, #f47b87 0%, #e85061 24%, var(--accent) 62%, #9e2130 100%);
+      color: #fff;
+      font-size: 64px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all .18s ease;
+      box-shadow: inset 0 2px 6px rgba(255,255,255,.28), 0 22px 36px rgba(180, 32, 51, .26);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .btn-circle:hover {
+      background: radial-gradient(circle at 35% 22%, #f57f8b 0%, #eb5a6a 24%, var(--accent-hover) 62%, #95202d 100%);
+      transform: translateY(-2px);
+    }
+    .btn-circle:active {
+      background: radial-gradient(circle at 35% 22%, #e66b78 0%, #d64858 24%, var(--accent-active) 62%, #861b28 100%);
+      transform: translateY(1px) scale(.99);
+      box-shadow: inset 0 2px 6px rgba(255,255,255,.2), 0 12px 22px rgba(180, 32, 51, .2);
+    }
+
+    .btn-circle:disabled {
+      opacity: 1;
+      color: #fff;
+      cursor: not-allowed;
+      background: radial-gradient(circle at 35% 22%, #f47b87 0%, #e85061 24%, var(--accent) 62%, #9e2130 100%);
+      box-shadow: inset 0 2px 6px rgba(255,255,255,.24), 0 18px 30px rgba(180, 32, 51, .22);
+    }
+
+    .small {
+      border: 1px solid #cdced4;
+      background: #fff;
+      color: #222;
+      border-radius: 12px;
+      padding: 14px 22px;
+      font-size: 19px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .small:hover { background: #f7f7f9; }
+
+    .selector-wrap {
+      margin-top: 16px;
+      border: 1px solid #e4e5eb;
+      border-radius: 14px;
+      background: #fbfbfd;
+      padding: 12px;
+    }
+
+    .selector-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .selector-title {
+      font-size: 17px;
+      font-weight: 600;
+      color: #2a2a2e;
+    }
+
+    .selector-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .tiny {
+      border: 1px solid #cdced4;
+      background: #fff;
+      color: #222;
+      border-radius: 10px;
+      padding: 6px 12px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .tiny:hover { background: #f7f7f9; }
+
+    .selector-hint {
+      font-size: 13px;
+      color: #6e6e73;
+      margin-bottom: 8px;
+    }
+
+    .selector-search {
+      width: 100%;
+      height: 38px;
+      border: 1px solid #d7d8dd;
+      border-radius: 10px;
+      background: #fff;
+      color: #222;
+      font-size: 14px;
+      padding: 0 10px;
+      margin-bottom: 8px;
+      outline: none;
+    }
+
+    .selector-search:focus {
+      border-color: #b9bcc6;
+    }
+
+    .selector-list {
+      width: 100%;
+      height: 170px;
+      border: 1px solid #d7d8dd;
+      border-radius: 12px;
+      background: #fff;
+      color: #222;
+      font-size: 15px;
+      padding: 6px;
+      outline: none;
+    }
+
+    .status {
+      margin-top: 16px;
+      min-height: 34px;
+      font-size: 21px;
+      color: var(--sub);
+      word-break: break-all;
+      text-align: center;
+    }
+
+    .progress-wrap {
+      margin-top: 16px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .progress-item {
+      border: 1px solid #e4e5eb;
+      border-radius: 14px;
+      padding: 12px;
+      background: #fbfbfd;
+    }
+
+    .progress-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      gap: 10px;
+    }
+
+    .progress-title {
+      font-size: 17px;
+      font-weight: 600;
+      color: #2a2a2e;
+    }
+
+    .progress-meta {
+      font-size: 14px;
+      color: #6e6e73;
+      white-space: nowrap;
+    }
+
+    .bar-track {
+      height: 14px;
+      border-radius: 999px;
+      background: #ececf2;
+      overflow: hidden;
+      border: 1px solid #dfdfe6;
+    }
+
+    .bar-fill {
+      height: 100%;
+      width: 0%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #aeb0ba 0%, #8f929e 100%);
+      transition: width .12s linear;
+    }
+
+    .bar-fill.active {
+      background: linear-gradient(90deg, #e65b6c 0%, #d12d3f 100%);
+    }
+
+    .bar-fill.done {
+      background: linear-gradient(90deg, #37a466 0%, #177245 100%);
+    }
+
+    .ok { color: var(--ok); }
+    .warn { color: var(--warn); }
+
+    @media (max-width: 940px) {
+      .body { padding: 20px; }
+      .card { padding: 16px; }
+      .path { height: 68px; font-size: 28px; }
+      .path::placeholder { font-size: 24px; }
+      .btn-circle { width: 200px; height: 200px; font-size: 50px; }
+      .small { font-size: 17px; }
+      .status { font-size: 18px; }
+      .progress-meta { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="body">
+      <section class="card">
+        <input id="ncmPath" class="path" type="text" placeholder="请输入网易云缓存目录，例如：E:\CloudMusic" />
+        <div class="actions">
+          <button id="runBtn" class="btn-circle" type="button">一键解析</button>
+          <button id="openOut" class="small" type="button">打开结果</button>
+        </div>
+        <div id="status" class="status">先关闭网易云，再执行</div>
+        <div class="progress-wrap">
+          <div class="progress-item">
+            <div class="progress-head">
+              <div class="progress-title">收集阶段</div>
+              <div id="collectMeta" class="progress-meta">等待开始</div>
+            </div>
+            <div class="bar-track"><div id="collectFill" class="bar-fill"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head">
+              <div class="progress-title">转换阶段</div>
+              <div id="convertMeta" class="progress-meta">等待开始</div>
+            </div>
+            <div class="bar-track"><div id="convertFill" class="bar-fill"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head">
+              <div class="progress-title">分发阶段</div>
+              <div id="organizeMeta" class="progress-meta">等待开始</div>
+            </div>
+            <div class="bar-track"><div id="organizeFill" class="bar-fill"></div></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var shell = new ActiveXObject("WScript.Shell");
+      var fso = new ActiveXObject("Scripting.FileSystemObject");
+
+      var appDir = window.location.pathname.replace(/^\//, "").replace(/\//g, "\\");
+      appDir = appDir.substring(0, appDir.lastIndexOf("\\"));
+      var workDir = appDir + "\\workspace";
+      var runBat = workDir + "\\workflow.bat";
+      var finalOut = appDir + "\\organized_music";
+      var mp3Out = workDir + "\\ncm_to_mp3\\output_mp3";
+      var runtimeMp3Out = workDir + "\\ncm_to_mp3\\_convert_runtime\\output_mp3";
+      var logFile = workDir + "\\_run_log.txt";
+      var launchCmd = workDir + "\\_launch_run.cmd";
+      var sourceFile = shell.ExpandEnvironmentStrings("%TEMP%") + "\\ncm_source_dir.txt";
+      var running = false;
+      var timer = null;
+      var startedAt = 0;
+      var lastSnapshotLen = 0;
+      var pendingLine = "";
+      var totalFiles = 0;
+      var collectDone = 0;
+      var convertDone = 0;
+      var organizeDone = 0;
+      var organizeProcessed = 0;
+      var currentStage = 0;
+      var convertSkipped = false;
+      var convertStarted = false;
+      var convertFinished = false;
+      var convertFailed = false;
+      var convertBaseCount = 0;
+      var convertExistingDone = 0;
+      var convertPendingCount = 0;
+      var convertProgressDir = "";
+      var hasError = false;
+      var errorStage = "";
+      var allListItems = [];
+      var currentListFilter = "all";
+      var currentListKeyword = "";
+
+      function setStatus(text, cls) {
+        var el = document.getElementById("status");
+        el.className = "status" + (cls ? (" " + cls) : "");
+        el.innerText = text;
+      }
+
+      function quote(path) {
+        return '"' + path.replace(/"/g, '""') + '"';
+      }
+
+      function readUtf8File(path) {
+        var stream = new ActiveXObject("ADODB.Stream");
+        stream.Type = 2;
+        stream.Mode = 3;
+        stream.Charset = "utf-8";
+        stream.Open();
+        stream.LoadFromFile(path);
+        var text = stream.ReadText(-1);
+        stream.Close();
+        return text;
+      }
+
+      function readAnsiFile(path) {
+        var f = fso.OpenTextFile(path, 1, false, 0);
+        var t = f.ReadAll();
+        f.Close();
+        return t;
+      }
+
+      function readLogFileSafe(path) {
+        try {
+          return readUtf8File(path);
+        } catch (e1) {
+          try {
+            return readAnsiFile(path);
+          } catch (e2) {
+            return null;
+          }
+        }
+      }
+
+      function writeUtf8File(path, text) {
+        var stream = new ActiveXObject("ADODB.Stream");
+        stream.Type = 2;
+        stream.Mode = 3;
+        stream.Charset = "utf-8";
+        stream.Open();
+        stream.WriteText(text || "", 0);
+        stream.SaveToFile(path, 2);
+        stream.Close();
+      }
+
+      function clearSelectOptions(sel) {
+        while (sel.options.length > 0) {
+          sel.remove(0);
+        }
+      }
+
+      function addSelectOption(sel, value, text, selected) {
+        var opt = document.createElement("option");
+        opt.value = value;
+        opt.text = text;
+        if (selected) {
+          opt.selected = true;
+        }
+        sel.add(opt);
+      }
+
+      function getVisibleLabel(kind) {
+        return kind === "albums" ? "[专辑] " : "[歌单] ";
+      }
+
+      function getSelectedSetFromSelector() {
+        var sel = document.getElementById("listSelector");
+        var map = {};
+        for (var i = 0; i < sel.options.length; i++) {
+          if (sel.options[i].selected) {
+            map[sel.options[i].value] = true;
+          }
+        }
+        return map;
+      }
+
+      function renderListSelector(preserveSelected) {
+        var sel = document.getElementById("listSelector");
+        var selectedMap = preserveSelected ? getSelectedSetFromSelector() : {};
+        clearSelectOptions(sel);
+        var kw = (currentListKeyword || "").toLowerCase();
+
+        for (var i = 0; i < allListItems.length; i++) {
+          var item = allListItems[i];
+          if (currentListFilter !== "all" && item.kind !== currentListFilter) {
+            continue;
+          }
+          if (kw && item.name.toLowerCase().indexOf(kw) < 0) {
+            continue;
+          }
+          var value = item.kind + "|" + item.name;
+          addSelectOption(sel, value, getVisibleLabel(item.kind) + item.name, !!selectedMap[value]);
+        }
+      }
+
+      function loadListOptionsFromOutput(sel) {
+        var count = 0;
+        var albumDir = workDir + "\\get_lists\\output\\albums";
+        var playlistDir = workDir + "\\get_lists\\output\\playlists";
+
+        if (fso.FolderExists(albumDir)) {
+          var albumFiles = new Enumerator(fso.GetFolder(albumDir).Files);
+          for (; !albumFiles.atEnd(); albumFiles.moveNext()) {
+            var af = albumFiles.item();
+            var an = af.Name;
+            if (an.length > 4 && an.toLowerCase().substring(an.length - 4) === ".txt") {
+              var baseA = an.substring(0, an.length - 4);
+              allListItems.push({ kind: "albums", name: baseA });
+              count++;
+            }
+          }
+        }
+
+        if (fso.FolderExists(playlistDir)) {
+          var playlistFiles = new Enumerator(fso.GetFolder(playlistDir).Files);
+          for (; !playlistFiles.atEnd(); playlistFiles.moveNext()) {
+            var pf = playlistFiles.item();
+            var pn = pf.Name;
+            if (pn.length > 4 && pn.toLowerCase().substring(pn.length - 4) === ".txt") {
+              var baseP = pn.substring(0, pn.length - 4);
+              allListItems.push({ kind: "playlists", name: baseP });
+              count++;
+            }
+          }
+        }
+
+        return count;
+      }
+
+      function loadListOptionsFromCatalog(sel) {
+        if (!fso.FileExists(listCatalogFile)) {
+          return 0;
+        }
+
+        var text = readLogFileSafe(listCatalogFile);
+        if (text === null) {
+          return 0;
+        }
+
+        var lines = text.replace(/\r\n/g, "\n").replace(/\r/g, "\n").split("\n");
+        var count = 0;
+        for (var i = 0; i < lines.length; i++) {
+          var line = (lines[i] || "").replace(/^\s+|\s+$/g, "");
+          if (!line) continue;
+          var pos = line.indexOf("|");
+          if (pos <= 0) continue;
+          var kind = line.substring(0, pos);
+          var name = line.substring(pos + 1);
+          if (!name) continue;
+          if (kind !== "albums" && kind !== "playlists") {
+            continue;
+          }
+          allListItems.push({ kind: kind, name: name });
+          count++;
+        }
+
+        return count;
+      }
+
+      function loadSelectableLists() {
+        var sel = document.getElementById("listSelector");
+        allListItems = [];
+
+        var count = loadListOptionsFromOutput(sel);
+        if (count === 0) {
+          count = loadListOptionsFromCatalog(sel);
+        }
+
+        renderListSelector(false);
+
+        var hint = document.getElementById("selectorHint");
+        if (count === 0) {
+          hint.innerText = "暂无可选项：先执行一次导出后可选择；当前默认处理全部";
+        } else {
+          hint.innerText = "按住 Ctrl 可多选；未勾选时默认处理全部（当前可选 " + count + " 项）";
+        }
+      }
+
+      function setAllListSelection(selected) {
+        var sel = document.getElementById("listSelector");
+        for (var i = 0; i < sel.options.length; i++) {
+          sel.options[i].selected = !!selected;
+        }
+      }
+
+      function setListFilter(filterKind) {
+        currentListFilter = filterKind;
+        renderListSelector(true);
+      }
+
+      function setListKeyword(keyword) {
+        currentListKeyword = keyword || "";
+        renderListSelector(true);
+      }
+
+      function getSelectedListValues() {
+        var sel = document.getElementById("listSelector");
+        var values = [];
+        for (var i = 0; i < sel.options.length; i++) {
+          if (sel.options[i].selected) {
+            values.push(sel.options[i].value);
+          }
+        }
+        return values;
+      }
+
+      function writeSelectionFile(values) {
+        var text = "";
+        if (values && values.length > 0) {
+          text = values.join("\r\n");
+        }
+        writeUtf8File(listSelectionFile, text);
+      }
+
+      function resetProgress() {
+        totalFiles = 0;
+        collectDone = 0;
+        convertDone = 0;
+        organizeDone = 0;
+        organizeProcessed = 0;
+        currentStage = 0;
+        convertSkipped = false;
+        convertStarted = false;
+        convertFinished = false;
+        convertFailed = false;
+        convertBaseCount = 0;
+        convertExistingDone = 0;
+        convertPendingCount = 0;
+        convertProgressDir = mp3Out;
+        hasError = false;
+        errorStage = "";
+        setProgressBar("collect", 0, 0, "等待开始", false, false);
+        setProgressBar("convert", 0, 0, "等待开始", false, false);
+        setProgressBar("organize", 0, 0, "等待开始", false, false);
+      }
+
+      function setProgressBar(prefix, current, total, label, active, done) {
+        var fill = document.getElementById(prefix + "Fill");
+        var meta = document.getElementById(prefix + "Meta");
+        var safeTotal = total > 0 ? total : 0;
+        var safeCurrent = current > 0 ? current : 0;
+
+        if (safeTotal > 0 && safeCurrent > safeTotal) {
+          safeCurrent = safeTotal;
+        }
+
+        var percent = 0;
+        if (safeTotal > 0) {
+          percent = Math.floor((safeCurrent * 100) / safeTotal);
+        }
+
+        fill.style.width = percent + "%";
+        fill.className = "bar-fill" + (done ? " done" : (active ? " active" : ""));
+
+        if (safeTotal > 0) {
+          meta.innerText = label + "  " + safeCurrent + " / " + safeTotal + " (" + percent + "%)";
+        } else {
+          meta.innerText = label;
+        }
+      }
+
+      function countFilesByExt(folderPath, extLower) {
+        if (!fso.FolderExists(folderPath)) return 0;
+
+        var stack = [];
+        stack.push(fso.GetFolder(folderPath));
+        var count = 0;
+
+        while (stack.length > 0) {
+          var folder = stack.pop();
+
+          var files = new Enumerator(folder.Files);
+          for (; !files.atEnd(); files.moveNext()) {
+            var file = files.item();
+            var name = ("" + file.Name).toLowerCase();
+            if (name.length >= extLower.length && name.substring(name.length - extLower.length) === extLower) {
+              count++;
+            }
+          }
+
+          var subs = new Enumerator(folder.SubFolders);
+          for (; !subs.atEnd(); subs.moveNext()) {
+            stack.push(subs.item());
+          }
+        }
+
+        return count;
+      }
+
+      function updateProgressView() {
+        var collectActive = running && currentStage === 1 && !convertStarted;
+        var convertActive = running && convertStarted && !convertFinished;
+        var organizeActive = running && currentStage === 3;
+
+        var collectLabel = currentStage >= 1 ? "收集中" : "等待开始";
+        var convertLabel = convertStarted ? "转换中" : "等待开始";
+        var organizeLabel = currentStage >= 3 ? "分发中" : "等待开始";
+
+        if (convertStarted && totalFiles > 0 && collectDone < totalFiles) {
+          collectDone = totalFiles;
+        }
+
+        if (convertStarted && totalFiles > 0) {
+          if (convertSkipped) {
+            convertDone = totalFiles;
+            convertLabel = "已跳过(输入未变化)";
+          } else if (convertFailed) {
+            var mp3NowOnFail = countFilesByExt(convertProgressDir, ".mp3");
+            var deltaOnFail = mp3NowOnFail - convertBaseCount;
+            convertDone = convertExistingDone + (deltaOnFail > 0 ? deltaOnFail : 0);
+            convertLabel = "转换失败";
+          } else if (!convertFinished) {
+            var mp3Count = countFilesByExt(convertProgressDir, ".mp3");
+            var delta = mp3Count - convertBaseCount;
+            convertDone = convertExistingDone + (delta > 0 ? delta : 0);
+          } else {
+            convertLabel = "转换完成";
+            if (convertDone <= 0 && totalFiles > 0) {
+              convertDone = convertExistingDone + convertPendingCount;
+            }
+          }
+
+          if (convertDone > totalFiles) {
+            convertDone = totalFiles;
+          }
+        }
+
+        if (currentStage >= 3 && totalFiles > 0) {
+          if (organizeProcessed > 0) {
+            organizeDone = organizeProcessed;
+          } else {
+            var organizedCount = countFilesByExt(finalOut, ".mp3");
+            organizeDone = organizedCount;
+          }
+
+          if (organizeDone > totalFiles) {
+            organizeDone = totalFiles;
+          }
+        }
+
+        if (running && hasError) {
+          collectActive = false;
+          convertActive = false;
+          organizeActive = false;
+        }
+
+        var collectDoneFlag = totalFiles > 0 && collectDone >= totalFiles;
+        var convertDoneFlag = (totalFiles > 0 && convertDone >= totalFiles) || (convertFinished && !convertFailed);
+        var organizeDoneFlag = totalFiles > 0 && organizeDone >= totalFiles;
+
+        setProgressBar("collect", collectDone, totalFiles, collectLabel, collectActive, collectDoneFlag);
+        setProgressBar("convert", convertDone, totalFiles, convertLabel, convertActive, convertDoneFlag);
+        setProgressBar("organize", organizeDone, totalFiles, organizeLabel, organizeActive, organizeDoneFlag);
+      }
+
+      function handleLogLine(line) {
+        var text = (line || "").replace(/^\s+|\s+$/g, "");
+        if (!text) return;
+
+        var m = null;
+
+        m = text.match(/^\[\[STAGE\]\]\s*(\d+)/);
+        if (m) {
+          currentStage = parseInt(m[1], 10);
+          if (currentStage === 1) setStatus("[1/3] 正在收集并转换", "ok");
+          if (currentStage === 2) setStatus("[2/3] 正在导出并统计转换进度", "ok");
+          if (currentStage === 3) setStatus("[3/3] 正在分发文件", "ok");
+          return;
+        }
+
+        m = text.match(/^\[\[COLLECT_TOTAL\]\]\s*(\d+)/);
+        if (m) {
+          totalFiles = parseInt(m[1], 10) || totalFiles;
+          return;
+        }
+
+        m = text.match(/^\[\[COLLECT\]\]\s*(\d+)\/(\d+)\|/);
+        if (m) {
+          collectDone = parseInt(m[1], 10) || collectDone;
+          totalFiles = parseInt(m[2], 10) || totalFiles;
+          if (currentStage < 1) currentStage = 1;
+          return;
+        }
+
+        m = text.match(/^\[\[NCM_TOTAL\]\]\s*(\d+)/);
+        if (m) {
+          totalFiles = parseInt(m[1], 10) || totalFiles;
+          if (collectDone < totalFiles) collectDone = totalFiles;
+          return;
+        }
+
+        if (text.indexOf("[[SKIP_CONVERT]]") === 0) {
+          convertStarted = true;
+          convertFinished = true;
+          convertSkipped = true;
+          return;
+        }
+
+        m = text.match(/^\[\[CONVERT_EXISTING\]\]\s*(\d+)/);
+        if (m) {
+          convertExistingDone = parseInt(m[1], 10) || 0;
+          return;
+        }
+
+        m = text.match(/^\[\[CONVERT_PENDING\]\]\s*(\d+)/);
+        if (m) {
+          convertPendingCount = parseInt(m[1], 10) || 0;
+          return;
+        }
+
+        if (text.indexOf("[[CONVERT_START]]") === 0) {
+          convertStarted = true;
+          convertFinished = false;
+          convertFailed = false;
+          convertProgressDir = fso.FolderExists(runtimeMp3Out) ? runtimeMp3Out : mp3Out;
+          convertBaseCount = countFilesByExt(convertProgressDir, ".mp3");
+          convertDone = 0;
+          if (currentStage < 1) currentStage = 1;
+          setStatus("[2/3] 正在转换 NCM -> MP3", "ok");
+          return;
+        }
+
+        if (text.indexOf("[[CONVERT_END]]") === 0) {
+          convertFinished = true;
+          convertFailed = false;
+          var mp3Now = countFilesByExt(convertProgressDir, ".mp3");
+          var deltaNow = mp3Now - convertBaseCount;
+          if (deltaNow > 0) {
+            convertDone = convertExistingDone + deltaNow;
+          } else {
+            convertDone = convertExistingDone + convertPendingCount;
+          }
+          if (convertDone > totalFiles && totalFiles > 0) convertDone = totalFiles;
+          return;
+        }
+
+        if (text.indexOf("[[CONVERT_FAIL]]") === 0) {
+          convertFinished = true;
+          convertFailed = true;
+          hasError = true;
+          setStatus("转换失败，请检查源文件或转换器", "warn");
+          return;
+        }
+
+        if (text.indexOf("[[DONE]]") === 0) {
+          if (totalFiles > 0) {
+            collectDone = totalFiles;
+            convertDone = totalFiles;
+            organizeDone = totalFiles;
+            organizeProcessed = totalFiles;
+          }
+          return;
+        }
+
+        m = text.match(/^\[\[ORG\]\]\s*(\d+)\/(\d+)\|/);
+        if (m) {
+          organizeProcessed++;
+          if (totalFiles > 0 && organizeProcessed > totalFiles) {
+            organizeProcessed = totalFiles;
+          }
+          if (currentStage < 3) {
+            currentStage = 3;
+          }
+          return;
+        }
+
+        if (text.indexOf("[[ERROR]]") === 0) {
+          hasError = true;
+          var parts = text.split(" ");
+          if (parts.length > 1) {
+            errorStage = (parts[1] || "").toLowerCase();
+          }
+          return;
+        }
+      }
+
+      function processLogDelta(content) {
+        if (content.length < lastSnapshotLen) {
+          lastSnapshotLen = 0;
+          pendingLine = "";
+        }
+
+        var delta = content.substring(lastSnapshotLen);
+        lastSnapshotLen = content.length;
+
+        if (delta.length > 0) {
+          var merged = (pendingLine + delta).replace(/\r\n/g, "\n").replace(/\r/g, "\n");
+          var parts = merged.split("\n");
+          pendingLine = parts.pop();
+
+          if (parts.length > 0) {
+            for (var i = 0; i < parts.length; i++) {
+              handleLogLine(parts[i]);
+            }
+          }
+        }
+      }
+
+      function flushPendingLineForState() {
+        if (!pendingLine) {
+          return;
+        }
+        handleLogLine(pendingLine);
+        pendingLine = "";
+      }
+
+      function buildRunCommand() {
+        return quote(launchCmd);
+      }
+
+      function writeSourceFile(pathText) {
+        writeUtf8File(sourceFile, pathText);
+      }
+
+      function writeLaunchScript() {
+        var runName = fso.GetFileName(runBat);
+        var cmd = fso.OpenTextFile(launchCmd, 2, true, 0);
+        cmd.WriteLine("@echo off");
+        cmd.WriteLine("cd /d %~dp0");
+        cmd.WriteLine("if exist \"_run_log.txt\" del /f /q \"_run_log.txt\"");
+        cmd.WriteLine("set NO_PAUSE=1");
+        cmd.WriteLine("set \"NCM_SOURCE_FILE=" + sourceFile + "\"");
+        cmd.WriteLine("call \"" + runName + "\" > \"_run_log.txt\" 2>&1");
+        cmd.Close();
+      }
+
+      function normalizeInput(value) {
+        var v = (value || "").replace(/^\s+|\s+$/g, "");
+        if (!v) return "";
+        return v;
+      }
+
+      function startPolling() {
+        if (timer) {
+          window.clearInterval(timer);
+        }
+        startedAt = new Date().getTime();
+        timer = window.setInterval(function () {
+          try {
+            if (!fso.FileExists(logFile)) {
+              if (new Date().getTime() - startedAt > 8000) {
+                setStatus("流程未启动，请检查目录权限或脚本路径", "warn");
+                running = false;
+                window.clearInterval(timer);
+                timer = null;
+                document.getElementById("runBtn").disabled = false;
+              }
+              return;
+            }
+            var content = readLogFileSafe(logFile);
+            if (content === null) {
+              setStatus("日志读取中，请稍候", "warn");
+              return;
+            }
+
+            processLogDelta(content);
+            updateProgressView();
+
+            if (content.indexOf("[[DONE]]") >= 0 || content.indexOf("全流程完成") >= 0) {
+              flushPendingLineForState();
+              updateProgressView();
+              setStatus("执行完成", "ok");
+              running = false;
+              window.clearInterval(timer);
+              timer = null;
+              document.getElementById("runBtn").disabled = false;
+              return;
+            }
+
+            if (
+              content.indexOf("[[ERROR]]") >= 0 ||
+              content.indexOf("unexpected at this time") >= 0 ||
+              content.indexOf("not recognized as an internal or external command") >= 0
+            ) {
+              hasError = true;
+              flushPendingLineForState();
+              updateProgressView();
+              if (errorStage === "convert") {
+                setStatus("转换阶段失败，请检查源文件或转换器", "warn");
+              } else if (errorStage === "organize") {
+                setStatus("分发阶段失败，请检查歌单导出与文件权限", "warn");
+              } else if (errorStage === "export") {
+                setStatus("导出阶段失败，请确认网易云数据库可访问", "warn");
+              } else {
+                setStatus("执行失败，请点开结果目录上级查看日志", "warn");
+              }
+              running = false;
+              window.clearInterval(timer);
+              timer = null;
+              document.getElementById("runBtn").disabled = false;
+            }
+          } catch (e) {
+          }
+        }, 120);
+      }
+
+      document.getElementById("runBtn").onclick = function () {
+        try {
+          if (running) {
+            setStatus("任务执行中，请稍候", "warn");
+            return;
+          }
+
+          if (!fso.FileExists(runBat)) {
+            setStatus("未找到流程脚本", "warn");
+            return;
+          }
+
+          var input = normalizeInput(document.getElementById("ncmPath").value);
+          if (!input) {
+            setStatus("请先输入目录", "warn");
+            return;
+          }
+
+          if (!fso.FolderExists(input)) {
+            setStatus("目录不存在", "warn");
+            return;
+          }
+
+          writeSourceFile(input);
+          writeLaunchScript();
+
+          running = true;
+          lastSnapshotLen = 0;
+          pendingLine = "";
+          resetProgress();
+          setStatus("已开始执行", "ok");
+          document.getElementById("runBtn").disabled = true;
+          shell.Run(buildRunCommand(), 0, false);
+          startPolling();
+        } catch (e) {
+          setStatus("执行失败", "warn");
+          running = false;
+          document.getElementById("runBtn").disabled = false;
+        }
+      };
+
+      document.getElementById("openOut").onclick = function () {
+        if (fso.FolderExists(finalOut)) {
+          shell.Run('explorer.exe ' + quote(finalOut), 1, false);
+        } else {
+          setStatus("先执行一次再打开结果", "warn");
+        }
+      };
+
+      resetProgress();
+    })();
+  </script>
+</body>
+</html>

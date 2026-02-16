@@ -1,0 +1,1489 @@
+========================================
+NetEase local music one-click workflow
+Step1: input NCM source folder, recursive scan enabled
+Step2: convert ncm to mp3
+Step3: export playlists and albums
+Step4: organize mp3 by playlist or album
+========================================
+
+[[STAGE]] 1
+========================================
+NCM 一键批量转换
+========================================
+[[STAGE]] 1
+
+Please input NetEase NCM source folder path
+Tip: subfolders are supported, all .ncm files will be scanned recursively
+Source path from app file mode enabled
+
+正在递归收集 NCM 文件到 input_ncm...
+Source path from app file: E:\Andy\Junior_I_2025\编程\NetEastCloudMusic_tool\test_file
+[[COLLECT_TOTAL]] 24
+[[COLLECT]] 1/24|林忆莲 - Go For It!.ncm
+[[COLLECT]] 2/24|林忆莲 - Heart Beat.ncm
+[[COLLECT]] 3/24|林忆莲 - I'll Never Forget You.ncm
+[[COLLECT]] 4/24|林忆莲 - Never Give Up On Love.ncm
+[[COLLECT]] 5/24|林忆莲 - Pieces Of Mind.ncm
+[[COLLECT]] 6/24|林忆莲 - Remember.ncm
+[[COLLECT]] 7/24|林忆莲 - Rememeber (Overtrue).ncm
+[[COLLECT]] 8/24|林忆莲 - Steal A Kiss.ncm
+[[COLLECT]] 9/24|林忆莲 - Tokyo Gray Line.ncm
+[[COLLECT]] 10/24|林忆莲 - 大好きな人生.ncm
+[[COLLECT]] 11/24|林忆莲 - 看吧.ncm
+[[COLLECT]] 12/24|何欣穗 - Famous.ncm
+[[COLLECT]] 13/24|何欣穗 - I Want My Life Back.ncm
+[[COLLECT]] 14/24|何欣穗 - Light My Fire.ncm
+[[COLLECT]] 15/24|何欣穗 - Mr. Right.ncm
+[[COLLECT]] 16/24|何欣穗 - Sometimes.ncm
+[[COLLECT]] 17/24|何欣穗 - 于是.ncm
+[[COLLECT]] 18/24|何欣穗 - 我的歌词.ncm
+[[COLLECT]] 19/24|何欣穗 - 根本.ncm
+[[COLLECT]] 20/24|何欣穗 - 现在怎么办.ncm
+[[COLLECT]] 21/24|何欣穗 - 给女儿(a letter from my dad).ncm
+[[COLLECT]] 22/24|何欣穗 - 讽刺.ncm
+[[COLLECT]] 23/24|何欣穗 - 诡计.ncm
+[[COLLECT]] 24/24|何欣穗 - 黄色太空衣.ncm
+24
+[[NCM_TOTAL]] 24
+[[CONVERT_EXISTING]] 0
+[[CONVERT_PENDING]] 24
+[[CONVERT_EXISTING]] 0
+[[CONVERT_PENDING]] 24
+已找到 24 个 .ncm 文件，其中 24 个需要转换，开始转换...
+[[CONVERT_START]]
+使用免安装版执行中...
+����Ŀ¼: E:\Andy\Junior_I_2025\���\NetEastCloudMusic_tool\workspace\ncm_to_mp3\_convert_runtime\input_ncm
+���Ŀ¼: E:\Andy\Junior_I_2025\���\NetEastCloudMusic_tool\workspace\ncm_to_mp3\_convert_runtime\output_mp3
+����⵽ 24 �� .ncm �ļ�����ʼת��...
+
+[1/24] pending_000001.ncm
+  �ɹ� -> pending_000001.mp3
+
+[2/24] pending_000002.ncm
+  �ɹ� -> pending_000002.mp3
+
+[3/24] pending_000003.ncm
+  �ɹ� -> pending_000003.mp3
+
+[4/24] pending_000004.ncm
+  �ɹ� -> pending_000004.mp3
+
+[5/24] pending_000005.ncm
+  �ɹ� -> pending_000005.mp3
+
+[6/24] pending_000006.ncm
+  �ɹ� -> pending_000006.mp3
+
+[7/24] pending_000007.ncm
+  �ɹ� -> pending_000007.mp3
+
+[8/24] pending_000008.ncm
+  �ɹ� -> pending_000008.mp3
+
+[9/24] pending_000009.ncm
+  �ɹ� -> pending_000009.mp3
+
+[10/24] pending_000010.ncm
+  �ɹ� -> pending_000010.mp3
+
+[11/24] pending_000011.ncm
+  �ɹ� -> pending_000011.mp3
+
+[12/24] pending_000012.ncm
+  �ɹ� -> pending_000012.mp3
+
+[13/24] pending_000013.ncm
+  �ɹ� -> pending_000013.mp3
+
+[14/24] pending_000014.ncm
+  �ɹ� -> pending_000014.mp3
+
+[15/24] pending_000015.ncm
+  �ɹ� -> pending_000015.mp3
+
+[16/24] pending_000016.ncm
+  �ɹ� -> pending_000016.mp3
+
+[17/24] pending_000017.ncm
+  �ɹ� -> pending_000017.mp3
+
+[18/24] pending_000018.ncm
+  �ɹ� -> pending_000018.mp3
+
+[19/24] pending_000019.ncm
+  �ɹ� -> pending_000019.mp3
+
+[20/24] pending_000020.ncm
+  �ɹ� -> pending_000020.mp3
+
+[21/24] pending_000021.ncm
+  �ɹ� -> pending_000021.mp3
+
+[22/24] pending_000022.ncm
+  �ɹ� -> pending_000022.mp3
+
+[23/24] pending_000023.ncm
+  �ɹ� -> pending_000023.mp3
+
+[24/24] pending_000024.ncm
+  �ɹ� -> pending_000024.mp3
+
+ת������
+�ɹ�: 24
+ʧ��: 0
+���Ŀ¼: E:\Andy\Junior_I_2025\���\NetEastCloudMusic_tool\workspace\ncm_to_mp3\_convert_runtime\output_mp3
+
+全部转换完成。
+[[CONVERT_END]]
+
+按任意键退出...
+
+[2/3] 导出歌单/专辑...
+[[STAGE]] 2
+开始导出歌单/专辑...
+导出完成
+专辑 txt 数量: 30
+歌单 txt 数量: 13
+输出目录: E:\Andy\Junior_I_2025\编程\NetEastCloudMusic_tool\workspace\get_lists\output
+
+导出成功。
+
+[3/3] 根据歌单/专辑整理 MP3...
+[[STAGE]] 3
+[[ORG]] 1/17|Abbey Road (Remastered)|Maxwell's Silver Hammer (Remastered)
+[[ORG_MISS]] Maxwell's Silver Hammer (Remastered)
+[[ORG]] 2/17|Abbey Road (Remastered)|Oh! Darling (Remastered)
+[[ORG_MISS]] Oh! Darling (Remastered)
+[[ORG]] 3/17|Abbey Road (Remastered)|Octopus's Garden (Remastered)
+[[ORG_MISS]] Octopus's Garden (Remastered)
+[[ORG]] 4/17|Abbey Road (Remastered)|I Want You (She's So Heavy) (Remastered)
+[[ORG_MISS]] I Want You (She's So Heavy) (Remastered)
+[[ORG]] 5/17|Abbey Road (Remastered)|Because (Remastered)
+[[ORG_MISS]] Because (Remastered)
+[[ORG]] 6/17|Abbey Road (Remastered)|Here Comes The Sun (Remastered)
+[[ORG_MISS]] Here Comes The Sun (Remastered)
+[[ORG]] 7/17|Abbey Road (Remastered)|Sun King (Remastered)
+[[ORG_MISS]] Sun King (Remastered)
+[[ORG]] 8/17|Abbey Road (Remastered)|Mean Mr Mustard (Remastered)
+[[ORG_MISS]] Mean Mr Mustard (Remastered)
+[[ORG]] 9/17|Abbey Road (Remastered)|Polythene Pam (Remastered)
+[[ORG_MISS]] Polythene Pam (Remastered)
+[[ORG]] 10/17|Abbey Road (Remastered)|She Came In Through The Bathroom Window (Remastered)
+[[ORG_MISS]] She Came In Through The Bathroom Window (Remastered)
+[[ORG]] 11/17|Abbey Road (Remastered)|Golden Slumbers (Remastered)
+[[ORG_MISS]] Golden Slumbers (Remastered)
+[[ORG]] 12/17|Abbey Road (Remastered)|You Never Give Me Your Money (Remastered)
+[[ORG_MISS]] You Never Give Me Your Money (Remastered)
+[[ORG]] 13/17|Abbey Road (Remastered)|Carry That Weight (Remastered)
+[[ORG_MISS]] Carry That Weight (Remastered)
+[[ORG]] 14/17|Abbey Road (Remastered)|Her Majesty (Remastered)
+[[ORG_MISS]] Her Majesty (Remastered)
+[[ORG]] 15/17|Abbey Road (Remastered)|The End (Remastered)
+[[ORG_MISS]] The End (Remastered)
+[[ORG]] 16/17|Abbey Road (Remastered)|Something (Remastered)
+[[ORG_MISS]] Something (Remastered)
+[[ORG]] 17/17|Abbey Road (Remastered)|Come Together (Remastered)
+[[ORG_MISS]] Come Together (Remastered)
+[[ORG_EMPTY_ALBUM]] Abbey Road (Remastered)|strict-track-match-none
+[done] [albums] Abbey Road (Remastered) -> copied=0, missing=17
+[[ORG]] 1/13|Distance|Can You Keep A Secret?
+[[ORG_MISS]] Can You Keep A Secret?
+[[ORG]] 2/13|Distance|Wait & See ～リスク～
+[[ORG_MISS]] Wait & See ～リスク～
+[[ORG]] 3/13|Distance|Distance
+[[ORG_MISS]] Distance
+[[ORG]] 4/13|Distance|ドラマ
+[[ORG_MISS]] ドラマ
+[[ORG]] 5/13|Distance|Eternally
+[[ORG_MISS]] Eternally
+[[ORG]] 6/13|Distance|Addicted to You (Up-In-Heaven Mix)
+[[ORG_MISS]] Addicted to You (Up-In-Heaven Mix)
+[[ORG]] 7/13|Distance|サングラス
+[[ORG_MISS]] サングラス
+[[ORG]] 8/13|Distance|For You
+[[ORG_MISS]] For You
+[[ORG]] 9/13|Distance|蹴っ飛ばせ!
+[[ORG_MISS]] 蹴っ飛ばせ!
+[[ORG]] 10/13|Distance|Parody
+[[ORG_MISS]] Parody
+[[ORG]] 11/13|Distance|タイム・リミット
+[[ORG_MISS]] タイム・リミット
+[[ORG]] 12/13|Distance|言葉にならない気持ち
+[[ORG_MISS]] 言葉にならない気持ち
+[[ORG]] 13/13|Distance|HAYATOCHI-REMIX(Bonus Track)
+[[ORG_MISS]] HAYATOCHI-REMIX(Bonus Track)
+[[ORG_EMPTY_ALBUM]] Distance|strict-track-match-none
+[done] [albums] Distance -> copied=0, missing=13
+[[ORG]] 1/10|EX ALL TIME FAVOURITES|忘记他
+[[ORG_MISS]] 忘记他
+[[ORG]] 2/10|EX ALL TIME FAVOURITES|梦伴
+[[ORG_MISS]] 梦伴
+[[ORG]] 3/10|EX ALL TIME FAVOURITES|把歌谈心
+[[ORG_MISS]] 把歌谈心
+[[ORG]] 4/10|EX ALL TIME FAVOURITES|唱一首好歌
+[[ORG_MISS]] 唱一首好歌
+[[ORG]] 5/10|EX ALL TIME FAVOURITES|这是爱
+[[ORG_MISS]] 这是爱
+[[ORG]] 6/10|EX ALL TIME FAVOURITES|李香兰
+[[ORG_MISS]] 李香兰
+[[ORG]] 7/10|EX ALL TIME FAVOURITES|问
+[[ORG_MISS]] 问
+[[ORG]] 8/10|EX ALL TIME FAVOURITES|深夜港湾
+[[ORG_MISS]] 深夜港湾
+[[ORG]] 9/10|EX ALL TIME FAVOURITES|印象
+[[ORG_MISS]] 印象
+[[ORG]] 10/10|EX ALL TIME FAVOURITES|拒绝再玩
+[[ORG_MISS]] 拒绝再玩
+[[ORG_EMPTY_ALBUM]] EX ALL TIME FAVOURITES|strict-track-match-none
+[done] [albums] EX ALL TIME FAVOURITES -> copied=0, missing=10
+[[ORG]] 1/13|Groupies吉他手|我亲爱的偏执狂
+[[ORG_MISS]] 我亲爱的偏执狂
+[[ORG]] 2/13|Groupies吉他手|小步舞曲
+[[ORG_MISS]] 小步舞曲
+[[ORG]] 3/13|Groupies吉他手|1234567
+[[ORG_MISS]] 1234567
+[[ORG]] 4/13|Groupies吉他手|太聪明
+[[ORG_MISS]] 太聪明
+[[ORG]] 5/13|Groupies吉他手|A Practice
+[[ORG_MISS]] A Practice
+[[ORG]] 6/13|Groupies吉他手|吉他手
+[[ORG_MISS]] 吉他手
+[[ORG]] 7/13|Groupies吉他手|随便说说
+[[ORG_MISS]] 随便说说
+[[ORG]] 8/13|Groupies吉他手|躺在你的衣柜 (Guitar)
+[[ORG_MISS]] 躺在你的衣柜 (Guitar)
+[[ORG]] 9/13|Groupies吉他手|黑眼圈
+[[ORG_MISS]] 黑眼圈
+[[ORG]] 10/13|Groupies吉他手|小尘埃
+[[ORG_MISS]] 小尘埃
+[[ORG]] 11/13|Groupies吉他手|不应该
+[[ORG_MISS]] 不应该
+[[ORG]] 12/13|Groupies吉他手|躺在你的衣柜 (Piano)
+[[ORG_MISS]] 躺在你的衣柜 (Piano)
+[[ORG]] 13/13|Groupies吉他手|就算全世界与我为敌
+[[ORG_MISS]] 就算全世界与我为敌
+[[ORG_EMPTY_ALBUM]] Groupies吉他手|strict-track-match-none
+[done] [albums] Groupies吉他手 -> copied=0, missing=13
+[[ORG]] 1/10|HeartBreakFast 伤心早餐店|一夜一夜一夜
+[[ORG_MISS]] 一夜一夜一夜
+[[ORG]] 2/10|HeartBreakFast 伤心早餐店|以后
+[[ORG_MISS]] 以后
+[[ORG]] 3/10|HeartBreakFast 伤心早餐店|轻轻对你说
+[[ORG_MISS]] 轻轻对你说
+[[ORG]] 4/10|HeartBreakFast 伤心早餐店|我只怪我自己
+[[ORG_MISS]] 我只怪我自己
+[[ORG]] 5/10|HeartBreakFast 伤心早餐店|lost you twice
+[[ORG_MISS]] lost you twice
+[[ORG]] 6/10|HeartBreakFast 伤心早餐店|太阳与地球
+[[ORG_MISS]] 太阳与地球
+[[ORG]] 7/10|HeartBreakFast 伤心早餐店|愚人节快乐
+[[ORG_MISS]] 愚人节快乐
+[[ORG]] 8/10|HeartBreakFast 伤心早餐店|死在你的胸怀
+[[ORG_MISS]] 死在你的胸怀
+[[ORG]] 9/10|HeartBreakFast 伤心早餐店|一个人睡着
+[[ORG_MISS]] 一个人睡着
+[[ORG]] 10/10|HeartBreakFast 伤心早餐店|不要在一起
+[[ORG_MISS]] 不要在一起
+[[ORG_EMPTY_ALBUM]] HeartBreakFast 伤心早餐店|strict-track-match-none
+[done] [albums] HeartBreakFast 伤心早餐店 -> copied=0, missing=10
+[[ORG]] 1/1|H³M|还有什么可以送给你
+[[ORG_MISS]] 还有什么可以送给你
+[[ORG_EMPTY_ALBUM]] H³M|strict-track-match-none
+[done] [albums] H³M -> copied=0, missing=1
+[[ORG]] 1/10|Long Time No See|Overture
+[[ORG_MISS]] Overture
+[[ORG]] 2/10|Long Time No See|Long Time No See Ⅰ
+[[ORG_MISS]] Long Time No See Ⅰ
+[[ORG]] 3/10|Long Time No See|软硬
+[[ORG_MISS]] 软硬
+[[ORG]] 4/10|Long Time No See|Fantastic
+[[ORG_MISS]] Fantastic
+[[ORG]] 5/10|Long Time No See|你的生活
+[[ORG_MISS]] 你的生活
+[[ORG]] 6/10|Long Time No See|系咩唔系喎
+[[ORG_MISS]] 系咩唔系喎
+[[ORG]] 7/10|Long Time No See|拍膊头
+[[ORG_MISS]] 拍膊头
+[[ORG]] 8/10|Long Time No See|Long Time No See Ⅱ
+[[ORG_MISS]] Long Time No See Ⅱ
+[[ORG]] 9/10|Long Time No See|好兄弟
+[[ORG_MISS]] 好兄弟
+[[ORG]] 10/10|Long Time No See|Encore
+[[ORG_MISS]] Encore
+[[ORG_EMPTY_ALBUM]] Long Time No See|strict-track-match-none
+[done] [albums] Long Time No See -> copied=0, missing=10
+[[ORG]] 1/11|Open Up|Rememeber (Overtrue)
+[[ORG]] 2/11|Open Up|Never Give Up On Love
+[[ORG]] 3/11|Open Up|Steal A Kiss
+[[ORG]] 4/11|Open Up|Tokyo Gray Line
+[[ORG]] 5/11|Open Up|Heart Beat
+[[ORG]] 6/11|Open Up|Pieces Of Mind
+[[ORG]] 7/11|Open Up|大好きな人生
+[[ORG]] 8/11|Open Up|Go For It!
+[[ORG]] 9/11|Open Up|看吧
+[[ORG]] 10/11|Open Up|I'll Never Forget You
+[[ORG]] 11/11|Open Up|Remember
+[done] [albums] Open Up -> copied=11, missing=0
+[[ORG]] 1/1|Shall We Dance_ Shall We Talk!|信心花舍
+[[ORG_MISS]] 信心花舍
+[[ORG_EMPTY_ALBUM]] Shall We Dance_ Shall We Talk!|strict-track-match-none
+[done] [albums] Shall We Dance_ Shall We Talk! -> copied=0, missing=1
+[[ORG]] 1/10|Songs|Come Summer
+[[ORG_MISS]] Come Summer
+[[ORG]] 2/10|Songs|Shouldn't Have to Be Like That
+[[ORG_MISS]] Shouldn't Have to Be Like That
+[[ORG]] 3/10|Songs|Even Tall Trees Bend
+[[ORG_MISS]] Even Tall Trees Bend
+[[ORG]] 4/10|Songs|Leaving
+[[ORG_MISS]] Leaving
+[[ORG]] 5/10|Songs|Just Like Me
+[[ORG_MISS]] Just Like Me
+[[ORG]] 6/10|Songs|Everytime I See You
+[[ORG_MISS]] Everytime I See You
+[[ORG]] 7/10|Songs|Regrets
+[[ORG_MISS]] Regrets
+[[ORG]] 8/10|Songs|Coming Home
+[[ORG_MISS]] Coming Home
+[[ORG]] 9/10|Songs|Crash of Light
+[[ORG_MISS]] Crash of Light
+[[ORG]] 10/10|Songs|The Distance Between Us
+[[ORG_MISS]] The Distance Between Us
+[[ORG_EMPTY_ALBUM]] Songs|strict-track-match-none
+[done] [albums] Songs -> copied=0, missing=10
+[[ORG]] 1/1|Swing|1984
+[[ORG_MISS]] 1984
+[[ORG_EMPTY_ALBUM]] Swing|strict-track-match-none
+[done] [albums] Swing -> copied=0, missing=1
+[[ORG]] 1/2|The Easy Ride|人工智能
+[[ORG_MISS]] 人工智能
+[[ORG]] 2/2|The Easy Ride|热带雨林
+[[ORG_MISS]] 热带雨林
+[[ORG_EMPTY_ALBUM]] The Easy Ride|strict-track-match-none
+[done] [albums] The Easy Ride -> copied=0, missing=2
+[[ORG]] 1/12|The Seeds Of Love|Bad Man's Song
+[[ORG_MISS]] Bad Man's Song
+[[ORG]] 2/12|The Seeds Of Love|Woman In Chains
+[[ORG_MISS]] Woman In Chains
+[[ORG]] 3/12|The Seeds Of Love|Sowing The Seeds Of Love
+[[ORG_MISS]] Sowing The Seeds Of Love
+[[ORG]] 4/12|The Seeds Of Love|Advice For The Young At Heart
+[[ORG_MISS]] Advice For The Young At Heart
+[[ORG]] 5/12|The Seeds Of Love|Swords And Knives
+[[ORG_MISS]] Swords And Knives
+[[ORG]] 6/12|The Seeds Of Love|Standing On The Corner Of The Third World
+[[ORG_MISS]] Standing On The Corner Of The Third World
+[[ORG]] 7/12|The Seeds Of Love|Year Of The Knife
+[[ORG_MISS]] Year Of The Knife
+[[ORG]] 8/12|The Seeds Of Love|Tears Roll Down
+[[ORG_MISS]] Tears Roll Down
+[[ORG]] 9/12|The Seeds Of Love|Famous Last Words
+[[ORG_MISS]] Famous Last Words
+[[ORG]] 10/12|The Seeds Of Love|Johnny Panic And The Bible Of Dreams
+[[ORG_MISS]] Johnny Panic And The Bible Of Dreams
+[[ORG]] 11/12|The Seeds Of Love|Always In The Past
+[[ORG_MISS]] Always In The Past
+[[ORG]] 12/12|The Seeds Of Love|Music For Tables
+[[ORG_MISS]] Music For Tables
+[[ORG_EMPTY_ALBUM]] The Seeds Of Love|strict-track-match-none
+[done] [albums] The Seeds Of Love -> copied=0, missing=12
+[[ORG]] 1/1|The Ultimate Story|想你
+[[ORG_MISS]] 想你
+[[ORG_EMPTY_ALBUM]] The Ultimate Story|strict-track-match-none
+[done] [albums] The Ultimate Story -> copied=0, missing=1
+[[ORG]] 1/1|Third Encounter Live|幸福摩天轮(Live)
+[[ORG_MISS]] 幸福摩天轮(Live)
+[[ORG_EMPTY_ALBUM]] Third Encounter Live|strict-track-match-none
+[done] [albums] Third Encounter Live -> copied=0, missing=1
+[[ORG]] 1/3|一枝花|你一半我一半
+[[ORG_MISS]] 你一半我一半
+[[ORG]] 2/3|一枝花|给我爱过的男孩们
+[[ORG_MISS]] 给我爱过的男孩们
+[[ORG]] 3/3|一枝花|赏味期限
+[[ORG_MISS]] 赏味期限
+[[ORG_EMPTY_ALBUM]] 一枝花|strict-track-match-none
+[done] [albums] 一枝花 -> copied=0, missing=3
+[[ORG]] 1/11|华丽的冒险|腐朽
+[[ORG_MISS]] 腐朽
+[[ORG]] 2/11|华丽的冒险|Sentimental Kills
+[[ORG_MISS]] Sentimental Kills
+[[ORG]] 3/11|华丽的冒险|旅行的意义
+[[ORG_MISS]] 旅行的意义
+[[ORG]] 4/11|华丽的冒险|华丽的冒险
+[[ORG_MISS]] 华丽的冒险
+[[ORG]] 5/11|华丽的冒险|太多
+[[ORG_MISS]] 太多
+[[ORG]] 6/11|华丽的冒险|花的姿态
+[[ORG_MISS]] 花的姿态
+[[ORG]] 7/11|华丽的冒险|Self
+[[ORG_MISS]] Self
+[[ORG]] 8/11|华丽的冒险|80%完美的日子
+[[ORG_MISS]] 80%完美的日子
+[[ORG]] 9/11|华丽的冒险|表面的和平
+[[ORG_MISS]] 表面的和平
+[[ORG]] 10/11|华丽的冒险|最初的起点
+[[ORG_MISS]] 最初的起点
+[[ORG]] 11/11|华丽的冒险|静静的生活
+[[ORG_MISS]] 静静的生活
+[[ORG_EMPTY_ALBUM]] 华丽的冒险|strict-track-match-none
+[done] [albums] 华丽的冒险 -> copied=0, missing=11
+[[ORG]] 1/11|大人|喧嘩上等(Active Fighting)
+[[ORG_MISS]] 喧嘩上等(Active Fighting)
+[[ORG]] 2/11|大人|秘密(A Secret)
+[[ORG_MISS]] 秘密(A Secret)
+[[ORG]] 3/11|大人|スーパースター
+[[ORG_MISS]] スーパースター
+[[ORG]] 4/11|大人|化粧直し
+[[ORG_MISS]] 化粧直し
+[[ORG]] 5/11|大人|歌舞伎(The Kabuki)
+[[ORG_MISS]] 歌舞伎(The Kabuki)
+[[ORG]] 6/11|大人|雪国(Niigata)
+[[ORG_MISS]] 雪国(Niigata)
+[[ORG]] 7/11|大人|修羅場 adult ver.
+[[ORG_MISS]] 修羅場 adult ver.
+[[ORG]] 8/11|大人|黄昏泣き(Don't cry my child)
+[[ORG_MISS]] 黄昏泣き(Don't cry my child)
+[[ORG]] 9/11|大人|ブラックアウト
+[[ORG_MISS]] ブラックアウト
+[[ORG]] 10/11|大人|透明人間(Unvisible Man) (Adult Version)
+[[ORG_MISS]] 透明人間(Unvisible Man) (Adult Version)
+[[ORG]] 11/11|大人|手紙(A Mail)
+[[ORG_MISS]] 手紙(A Mail)
+[[ORG_EMPTY_ALBUM]] 大人|strict-track-match-none
+[done] [albums] 大人 -> copied=0, missing=11
+[[ORG]] 1/2|大雄|大雄
+[[ORG_MISS]] 大雄
+[[ORG]] 2/2|大雄|美雪 美雪
+[[ORG_MISS]] 美雪 美雪
+[[ORG_EMPTY_ALBUM]] 大雄|strict-track-match-none
+[done] [albums] 大雄 -> copied=0, missing=2
+[[ORG]] 1/13|她的。发光摇摆|我的歌词
+[[ORG]] 2/13|她的。发光摇摆|于是
+[[ORG]] 3/13|她的。发光摇摆|Famous
+[[ORG]] 4/13|她的。发光摇摆|诡计
+[[ORG]] 5/13|她的。发光摇摆|现在怎么办
+[[ORG]] 6/13|她的。发光摇摆|Sometimes
+[[ORG]] 7/13|她的。发光摇摆|Light My Fire
+[[ORG]] 8/13|她的。发光摇摆|Mr. Right
+[[ORG]] 9/13|她的。发光摇摆|根本
+[[ORG]] 10/13|她的。发光摇摆|讽刺
+[[ORG]] 11/13|她的。发光摇摆|I Want My Life Back
+[[ORG]] 12/13|她的。发光摇摆|黄色太空衣
+[[ORG]] 13/13|她的。发光摇摆|给女儿(a letter from my dad)
+[done] [albums] 她的。发光摇摆 -> copied=13, missing=0
+[[ORG]] 1/1|宝丽金超白金精选特辑II(韩国银圈版)|半点心
+[[ORG_MISS]] 半点心
+[[ORG_EMPTY_ALBUM]] 宝丽金超白金精选特辑II(韩国银圈版)|strict-track-match-none
+[done] [albums] 宝丽金超白金精选特辑II(韩国银圈版) -> copied=0, missing=1
+[[ORG]] 1/9|无能的力量|九十年代
+[[ORG_MISS]] 九十年代
+[[ORG]] 2/9|无能的力量|无能的力量
+[[ORG_MISS]] 无能的力量
+[[ORG]] 3/9|无能的力量|混子
+[[ORG_MISS]] 混子
+[[ORG]] 4/9|无能的力量|笼中鸟儿
+[[ORG_MISS]] 笼中鸟儿
+[[ORG]] 5/9|无能的力量|新鲜摇滚Rock'n Roll
+[[ORG_MISS]] 新鲜摇滚Rock'n Roll
+[[ORG]] 6/9|无能的力量|缓冲
+[[ORG_MISS]] 缓冲
+[[ORG]] 7/9|无能的力量|另一个空间
+[[ORG_MISS]] 另一个空间
+[[ORG]] 8/9|无能的力量|春节
+[[ORG_MISS]] 春节
+[[ORG]] 9/9|无能的力量|时代的晚上
+[[ORG_MISS]] 时代的晚上
+[[ORG_EMPTY_ALBUM]] 无能的力量|strict-track-match-none
+[done] [albums] 无能的力量 -> copied=0, missing=9
+[[ORG]] 1/1|游戏 基|必杀技
+[[ORG_MISS]] 必杀技
+[[ORG_EMPTY_ALBUM]] 游戏 基|strict-track-match-none
+[done] [albums] 游戏 基 -> copied=0, missing=1
+[[ORG]] 1/39|爱你伍佰年|爱上别人是快乐的事
+[[ORG_MISS]] 爱上别人是快乐的事
+[[ORG]] 2/39|爱你伍佰年|点烟
+[[ORG_MISS]] 点烟
+[[ORG]] 3/39|爱你伍佰年|少年，安啦！
+[[ORG_MISS]] 少年，安啦！
+[[ORG]] 4/39|爱你伍佰年|思念亲像一条河
+[[ORG_MISS]] 思念亲像一条河
+[[ORG]] 5/39|爱你伍佰年|素兰小姐要出嫁
+[[ORG_MISS]] 素兰小姐要出嫁
+[[ORG]] 6/39|爱你伍佰年|只要为你活一天
+[[ORG_MISS]] 只要为你活一天
+[[ORG]] 7/39|爱你伍佰年|背叛
+[[ORG_MISS]] 背叛
+[[ORG]] 8/39|爱你伍佰年|牵挂
+[[ORG_MISS]] 牵挂
+[[ORG]] 9/39|爱你伍佰年|亲爱的你
+[[ORG_MISS]] 亲爱的你
+[[ORG]] 10/39|爱你伍佰年|楼仔厝
+[[ORG_MISS]] 楼仔厝
+[[ORG]] 11/39|爱你伍佰年|继续堕落
+[[ORG_MISS]] 继续堕落
+[[ORG]] 12/39|爱你伍佰年|秋风夜雨
+[[ORG_MISS]] 秋风夜雨
+[[ORG]] 13/39|爱你伍佰年|墓仔埔也敢去
+[[ORG_MISS]] 墓仔埔也敢去
+[[ORG]] 14/39|爱你伍佰年|Kiss Me(星星知我心)
+[[ORG_MISS]] Kiss Me(星星知我心)
+[[ORG]] 15/39|爱你伍佰年|爱情限时批
+[[ORG_MISS]] 爱情限时批
+[[ORG]] 16/39|爱你伍佰年|浪人情歌
+[[ORG_MISS]] 浪人情歌
+[[ORG]] 17/39|爱你伍佰年|夏夜晚风
+[[ORG_MISS]] 夏夜晚风
+[[ORG]] 18/39|爱你伍佰年|爱情的尽头
+[[ORG_MISS]] 爱情的尽头
+[[ORG]] 19/39|爱你伍佰年|爱你一万年
+[[ORG_MISS]] 爱你一万年
+[[ORG]] 20/39|爱你伍佰年|挪威的森林
+[[ORG_MISS]] 挪威的森林
+[[ORG]] 21/39|爱你伍佰年|断肠诗
+[[ORG_MISS]] 断肠诗
+[[ORG]] 22/39|爱你伍佰年|返去故乡
+[[ORG_MISS]] 返去故乡
+[[ORG]] 23/39|爱你伍佰年|心爱的再会啦
+[[ORG_MISS]] 心爱的再会啦
+[[ORG]] 24/39|爱你伍佰年|飞在风中的小雨
+[[ORG_MISS]] 飞在风中的小雨
+[[ORG]] 25/39|爱你伍佰年|煞到你
+[[ORG_MISS]] 煞到你
+[[ORG]] 26/39|爱你伍佰年|树枝孤鸟
+[[ORG_MISS]] 树枝孤鸟
+[[ORG]] 27/39|爱你伍佰年|真世界
+[[ORG_MISS]] 真世界
+[[ORG]] 28/39|爱你伍佰年|上帝救救我
+[[ORG_MISS]] 上帝救救我
+[[ORG]] 29/39|爱你伍佰年|白鸽
+[[ORG_MISS]] 白鸽
+[[ORG]] 30/39|爱你伍佰年|与你到永久
+[[ORG_MISS]] 与你到永久
+[[ORG]] 31/39|爱你伍佰年|一生最爱的人
+[[ORG_MISS]] 一生最爱的人
+[[ORG]] 32/39|爱你伍佰年|世界第一等
+[[ORG_MISS]] 世界第一等
+[[ORG]] 33/39|爱你伍佰年|美丽新世界(电子版)
+[[ORG_MISS]] 美丽新世界(电子版)
+[[ORG]] 34/39|爱你伍佰年|冲冲冲
+[[ORG_MISS]] 冲冲冲
+[[ORG]] 35/39|爱你伍佰年|你爱我
+[[ORG_MISS]] 你爱我
+[[ORG]] 36/39|爱你伍佰年|痛哭的人
+[[ORG_MISS]] 痛哭的人
+[[ORG]] 37/39|爱你伍佰年|被动(Live)
+[[ORG_MISS]] 被动(Live)
+[[ORG]] 38/39|爱你伍佰年|王道
+[[ORG_MISS]] 王道
+[[ORG]] 39/39|爱你伍佰年|枫叶
+[[ORG_MISS]] 枫叶
+[[ORG_EMPTY_ALBUM]] 爱你伍佰年|strict-track-match-none
+[done] [albums] 爱你伍佰年 -> copied=0, missing=39
+[[ORG]] 1/11|要多美丽有多美丽|无人驾驶
+[[ORG_MISS]] 无人驾驶
+[[ORG]] 2/11|要多美丽有多美丽|天天都是礼拜天
+[[ORG_MISS]] 天天都是礼拜天
+[[ORG]] 3/11|要多美丽有多美丽|要多美丽有多美丽
+[[ORG_MISS]] 要多美丽有多美丽
+[[ORG]] 4/11|要多美丽有多美丽|相对论
+[[ORG_MISS]] 相对论
+[[ORG]] 5/11|要多美丽有多美丽|谢谢你的旧情人
+[[ORG_MISS]] 谢谢你的旧情人
+[[ORG]] 6/11|要多美丽有多美丽|儿童乐园
+[[ORG_MISS]] 儿童乐园
+[[ORG]] 7/11|要多美丽有多美丽|要多美丽有多美丽 (人山人海 Version)
+[[ORG_MISS]] 要多美丽有多美丽 (人山人海 Version)
+[[ORG]] 8/11|要多美丽有多美丽|手提巴黎
+[[ORG_MISS]] 手提巴黎
+[[ORG]] 9/11|要多美丽有多美丽|翻风
+[[ORG_MISS]] 翻风
+[[ORG]] 10/11|要多美丽有多美丽|梦见的歌
+[[ORG_MISS]] 梦见的歌
+[[ORG]] 11/11|要多美丽有多美丽|隔着枕头对我说
+[[ORG_MISS]] 隔着枕头对我说
+[[ORG_EMPTY_ALBUM]] 要多美丽有多美丽|strict-track-match-none
+[done] [albums] 要多美丽有多美丽 -> copied=0, missing=11
+[[ORG]] 1/10|让我想一想|让我想一想
+[[ORG_MISS]] 让我想一想
+[[ORG]] 2/10|让我想一想|会不会
+[[ORG_MISS]] 会不会
+[[ORG]] 3/10|让我想一想|微凉的你
+[[ORG_MISS]] 微凉的你
+[[ORG]] 4/10|让我想一想|和你在一起
+[[ORG_MISS]] 和你在一起
+[[ORG]] 5/10|让我想一想|情歌
+[[ORG_MISS]] 情歌
+[[ORG]] 6/10|让我想一想|孤岛
+[[ORG_MISS]] 孤岛
+[[ORG]] 7/10|让我想一想|孩子
+[[ORG_MISS]] 孩子
+[[ORG]] 8/10|让我想一想|嫉妒
+[[ORG_MISS]] 嫉妒
+[[ORG]] 9/10|让我想一想|漫漫长夜
+[[ORG_MISS]] 漫漫长夜
+[[ORG]] 10/10|让我想一想|天使
+[[ORG_MISS]] 天使
+[[ORG_EMPTY_ALBUM]] 让我想一想|strict-track-match-none
+[done] [albums] 让我想一想 -> copied=0, missing=10
+[[ORG]] 1/11|还是会寂寞|越洋电话
+[[ORG_MISS]] 越洋电话
+[[ORG]] 2/11|还是会寂寞|我的骄傲无可救药
+[[ORG_MISS]] 我的骄傲无可救药
+[[ORG]] 3/11|还是会寂寞|还是会寂寞
+[[ORG_MISS]] 还是会寂寞
+[[ORG]] 4/11|还是会寂寞|下午三点
+[[ORG_MISS]] 下午三点
+[[ORG]] 5/11|还是会寂寞|午餐的约会
+[[ORG_MISS]] 午餐的约会
+[[ORG]] 6/11|还是会寂寞|温室花朵
+[[ORG_MISS]] 温室花朵
+[[ORG]] 7/11|还是会寂寞|等待
+[[ORG_MISS]] 等待
+[[ORG]] 8/11|还是会寂寞|慢歌3
+[[ORG_MISS]] 慢歌3
+[[ORG]] 9/11|还是会寂寞|灵感
+[[ORG_MISS]] 灵感
+[[ORG]] 10/11|还是会寂寞|告诉我
+[[ORG_MISS]] 告诉我
+[[ORG]] 11/11|还是会寂寞|慢歌1
+[[ORG_MISS]] 慢歌1
+[[ORG_EMPTY_ALBUM]] 还是会寂寞|strict-track-match-none
+[done] [albums] 还是会寂寞 -> copied=0, missing=11
+[[ORG]] 1/1|陪你倒数|左右手
+[[ORG_MISS]] 左右手
+[[ORG_EMPTY_ALBUM]] 陪你倒数|strict-track-match-none
+[done] [albums] 陪你倒数 -> copied=0, missing=1
+[[ORG]] 1/1|黑白|忧书
+[[ORG_MISS]] 忧书
+[[ORG_EMPTY_ALBUM]] 黑白|strict-track-match-none
+[done] [albums] 黑白 -> copied=0, missing=1
+[[ORG]] 1/9|黑豹|Don't Break My Heart
+[[ORG_MISS]] Don't Break My Heart
+[[ORG]] 2/9|黑豹|Take Care
+[[ORG_MISS]] Take Care
+[[ORG]] 3/9|黑豹|靠近我
+[[ORG_MISS]] 靠近我
+[[ORG]] 4/9|黑豹|别来纠缠我
+[[ORG_MISS]] 别来纠缠我
+[[ORG]] 5/9|黑豹|脸谱
+[[ORG_MISS]] 脸谱
+[[ORG]] 6/9|黑豹|体会
+[[ORG_MISS]] 体会
+[[ORG]] 7/9|黑豹|怕你为自己流泪
+[[ORG_MISS]] 怕你为自己流泪
+[[ORG]] 8/9|黑豹|无地自容
+[[ORG_MISS]] 无地自容
+[[ORG]] 9/9|黑豹|眼光里
+[[ORG_MISS]] 眼光里
+[[ORG_EMPTY_ALBUM]] 黑豹|strict-track-match-none
+[done] [albums] 黑豹 -> copied=0, missing=9
+[[ORG]] 1/125|AndyLong1211喜欢的音乐|于是
+[[ORG]] 2/125|AndyLong1211喜欢的音乐|Nothing's Gonna Stop Us Now
+[[ORG_MISS]] Nothing's Gonna Stop Us Now
+[[ORG]] 3/125|AndyLong1211喜欢的音乐|凌晨计程车
+[[ORG_MISS]] 凌晨计程车
+[[ORG]] 4/125|AndyLong1211喜欢的音乐|背叛
+[[ORG_MISS]] 背叛
+[[ORG]] 5/125|AndyLong1211喜欢的音乐|一点点
+[[ORG_MISS]] 一点点
+[[ORG]] 6/125|AndyLong1211喜欢的音乐|翅膀
+[[ORG_MISS]] 翅膀
+[[ORG]] 7/125|AndyLong1211喜欢的音乐|你一半我一半
+[[ORG_MISS]] 你一半我一半
+[[ORG]] 8/125|AndyLong1211喜欢的音乐|你是一首流行曲
+[[ORG_MISS]] 你是一首流行曲
+[[ORG]] 9/125|AndyLong1211喜欢的音乐|给我一段仁爱路
+[[ORG_MISS]] 给我一段仁爱路
+[[ORG]] 10/125|AndyLong1211喜欢的音乐|鱼仔
+[[ORG_MISS]] 鱼仔
+[[ORG]] 11/125|AndyLong1211喜欢的音乐|Don't Let Me Down
+[[ORG_MISS]] Don't Let Me Down
+[[ORG]] 12/125|AndyLong1211喜欢的音乐|恋曲1990
+[[ORG_MISS]] 恋曲1990
+[[ORG]] 13/125|AndyLong1211喜欢的音乐|要多美丽有多美丽 (人山人海 Version)
+[[ORG_MISS]] 要多美丽有多美丽 (人山人海 Version)
+[[ORG]] 14/125|AndyLong1211喜欢的音乐|无能的力量
+[[ORG_MISS]] 无能的力量
+[[ORG]] 15/125|AndyLong1211喜欢的音乐|混子
+[[ORG_MISS]] 混子
+[[ORG]] 16/125|AndyLong1211喜欢的音乐|Don't Look Back in Anger (Remastered)
+[[ORG_MISS]] Don't Look Back in Anger (Remastered)
+[[ORG]] 17/125|AndyLong1211喜欢的音乐|Last Night on Earth
+[[ORG_MISS]] Last Night on Earth
+[[ORG]] 18/125|AndyLong1211喜欢的音乐|You
+[[ORG]] 19/125|AndyLong1211喜欢的音乐|路口
+[[ORG_MISS]] 路口
+[[ORG]] 20/125|AndyLong1211喜欢的音乐|你懂不懂？
+[[ORG_MISS]] 你懂不懂？
+[[ORG]] 21/125|AndyLong1211喜欢的音乐|梦伴
+[[ORG_MISS]] 梦伴
+[[ORG]] 22/125|AndyLong1211喜欢的音乐|赏味期限
+[[ORG_MISS]] 赏味期限
+[[ORG]] 23/125|AndyLong1211喜欢的音乐|一枝花
+[[ORG_MISS]] 一枝花
+[[ORG]] 24/125|AndyLong1211喜欢的音乐|Mean Mr Mustard (Remastered)
+[[ORG_MISS]] Mean Mr Mustard (Remastered)
+[[ORG]] 25/125|AndyLong1211喜欢的音乐|高级动物
+[[ORG_MISS]] 高级动物
+[[ORG]] 26/125|AndyLong1211喜欢的音乐|不是我不明白
+[[ORG_MISS]] 不是我不明白
+[[ORG]] 27/125|AndyLong1211喜欢的音乐|Last Christmas
+[[ORG_MISS]] Last Christmas
+[[ORG]] 28/125|AndyLong1211喜欢的音乐|船长
+[[ORG_MISS]] 船长
+[[ORG]] 29/125|AndyLong1211喜欢的音乐|噢！乖
+[[ORG_MISS]] 噢！乖
+[[ORG]] 30/125|AndyLong1211喜欢的音乐|大雄 (Happy Ending)
+[[ORG_MISS]] 大雄 (Happy Ending)
+[[ORG]] 31/125|AndyLong1211喜欢的音乐|Like a Rolling Stone
+[[ORG_MISS]] Like a Rolling Stone
+[[ORG]] 32/125|AndyLong1211喜欢的音乐|Give Me a Reason
+[[ORG_MISS]] Give Me a Reason
+[[ORG]] 33/125|AndyLong1211喜欢的音乐|Can't Take My Eyes Off You
+[[ORG_MISS]] Can't Take My Eyes Off You
+[[ORG]] 34/125|AndyLong1211喜欢的音乐|怀念
+[[ORG_MISS]] 怀念
+[[ORG]] 35/125|AndyLong1211喜欢的音乐|人工智能
+[[ORG_MISS]] 人工智能
+[[ORG]] 36/125|AndyLong1211喜欢的音乐|热带雨林
+[[ORG_MISS]] 热带雨林
+[[ORG]] 37/125|AndyLong1211喜欢的音乐|Territorial Pissings
+[[ORG_MISS]] Territorial Pissings
+[[ORG]] 38/125|AndyLong1211喜欢的音乐|你快乐所以我快乐
+[[ORG_MISS]] 你快乐所以我快乐
+[[ORG]] 39/125|AndyLong1211喜欢的音乐|需要人陪
+[[ORG_MISS]] 需要人陪
+[[ORG]] 40/125|AndyLong1211喜欢的音乐|阴天
+[[ORG_MISS]] 阴天
+[[ORG]] 41/125|AndyLong1211喜欢的音乐|拒绝再玩
+[[ORG_MISS]] 拒绝再玩
+[[ORG]] 42/125|AndyLong1211喜欢的音乐|唱一首好歌
+[[ORG_MISS]] 唱一首好歌
+[[ORG]] 43/125|AndyLong1211喜欢的音乐|深夜港湾
+[[ORG_MISS]] 深夜港湾
+[[ORG]] 44/125|AndyLong1211喜欢的音乐|乜Q报章
+[[ORG_MISS]] 乜Q报章
+[[ORG]] 45/125|AndyLong1211喜欢的音乐|Ob-La-Di, Ob-La-Da (Remastered)
+[[ORG_MISS]] Ob-La-Di, Ob-La-Da (Remastered)
+[[ORG]] 46/125|AndyLong1211喜欢的音乐|爱人错过
+[[ORG_MISS]] 爱人错过
+[[ORG]] 47/125|AndyLong1211喜欢的音乐|霓虹甜心
+[[ORG_MISS]] 霓虹甜心
+[[ORG]] 48/125|AndyLong1211喜欢的音乐|Joey
+[[ORG_MISS]] Joey
+[[ORG]] 49/125|AndyLong1211喜欢的音乐|必杀技
+[[ORG_MISS]] 必杀技
+[[ORG]] 50/125|AndyLong1211喜欢的音乐|Love Yourself
+[[ORG_MISS]] Love Yourself
+[[ORG]] 51/125|AndyLong1211喜欢的音乐|初哥
+[[ORG_MISS]] 初哥
+[[ORG]] 52/125|AndyLong1211喜欢的音乐|躺在你的衣柜 (Guitar)
+[[ORG_MISS]] 躺在你的衣柜 (Guitar)
+[[ORG]] 53/125|AndyLong1211喜欢的音乐|不知所谓
+[[ORG_MISS]] 不知所谓
+[[ORG]] 54/125|AndyLong1211喜欢的音乐|忧书
+[[ORG_MISS]] 忧书
+[[ORG]] 55/125|AndyLong1211喜欢的音乐|言葉にならない気持ち
+[[ORG_MISS]] 言葉にならない気持ち
+[[ORG]] 56/125|AndyLong1211喜欢的音乐|放个大招给你看
+[[ORG_MISS]] 放个大招给你看
+[[ORG]] 57/125|AndyLong1211喜欢的音乐|被动(Live)
+[[ORG_MISS]] 被动(Live)
+[[ORG]] 58/125|AndyLong1211喜欢的音乐|结果
+[[ORG_MISS]] 结果
+[[ORG]] 59/125|AndyLong1211喜欢的音乐|有心人
+[[ORG_MISS]] 有心人
+[[ORG]] 60/125|AndyLong1211喜欢的音乐|There Is A Light That Never Goes Out (2011 Remastered Version)
+[[ORG_MISS]] There Is A Light That Never Goes Out (2011 Remastered Version)
+[[ORG]] 61/125|AndyLong1211喜欢的音乐|素颜
+[[ORG_MISS]] 素颜
+[[ORG]] 62/125|AndyLong1211喜欢的音乐|小步舞曲
+[[ORG_MISS]] 小步舞曲
+[[ORG]] 63/125|AndyLong1211喜欢的音乐|鼓楼
+[[ORG_MISS]] 鼓楼
+[[ORG]] 64/125|AndyLong1211喜欢的音乐|国际歌
+[[ORG_MISS]] 国际歌
+[[ORG]] 65/125|AndyLong1211喜欢的音乐|时代的晚上
+[[ORG_MISS]] 时代的晚上
+[[ORG]] 66/125|AndyLong1211喜欢的音乐|静止
+[[ORG_MISS]] 静止
+[[ORG]] 67/125|AndyLong1211喜欢的音乐|早安，晨之美！
+[[ORG_MISS]] 早安，晨之美！
+[[ORG]] 68/125|AndyLong1211喜欢的音乐|Be My Girl-Sally
+[[ORG_MISS]] Be My Girl-Sally
+[[ORG]] 69/125|AndyLong1211喜欢的音乐|拍膊头
+[[ORG_MISS]] 拍膊头
+[[ORG]] 70/125|AndyLong1211喜欢的音乐|还是会寂寞 (Live)
+[[ORG_MISS]] 还是会寂寞 (Live)
+[[ORG]] 71/125|AndyLong1211喜欢的音乐|让我想一想 (Live)
+[[ORG_MISS]] 让我想一想 (Live)
+[[ORG]] 72/125|AndyLong1211喜欢的音乐|左右手
+[[ORG_MISS]] 左右手
+[[ORG]] 73/125|AndyLong1211喜欢的音乐|Makes Me Wonder
+[[ORG_MISS]] Makes Me Wonder
+[[ORG]] 74/125|AndyLong1211喜欢的音乐|As It Was
+[[ORG_MISS]] As It Was
+[[ORG]] 75/125|AndyLong1211喜欢的音乐|1973
+[[ORG_MISS]] 1973
+[[ORG]] 76/125|AndyLong1211喜欢的音乐|Basket Case
+[[ORG_MISS]] Basket Case
+[[ORG]] 77/125|AndyLong1211喜欢的音乐|Stand by Me
+[[ORG_MISS]] Stand by Me
+[[ORG]] 78/125|AndyLong1211喜欢的音乐|三里屯的夜
+[[ORG_MISS]] 三里屯的夜
+[[ORG]] 79/125|AndyLong1211喜欢的音乐|Man In The Mirror
+[[ORG_MISS]] Man In The Mirror
+[[ORG]] 80/125|AndyLong1211喜欢的音乐|I Love You So
+[[ORG_MISS]] I Love You So
+[[ORG]] 81/125|AndyLong1211喜欢的音乐|On Melancholy Hill
+[[ORG_MISS]] On Melancholy Hill
+[[ORG]] 82/125|AndyLong1211喜欢的音乐|Wrapped Around Your Finger
+[[ORG_MISS]] Wrapped Around Your Finger
+[[ORG]] 83/125|AndyLong1211喜欢的音乐|King Of Pain
+[[ORG_MISS]] King Of Pain
+[[ORG]] 84/125|AndyLong1211喜欢的音乐|Every Breath You Take
+[[ORG_MISS]] Every Breath You Take
+[[ORG]] 85/125|AndyLong1211喜欢的音乐|Shouldn't Have to Be Like That
+[[ORG_MISS]] Shouldn't Have to Be Like That
+[[ORG]] 86/125|AndyLong1211喜欢的音乐|Supersonic
+[[ORG_MISS]] Supersonic
+[[ORG]] 87/125|AndyLong1211喜欢的音乐|The End Of The World
+[[ORG_MISS]] The End Of The World
+[[ORG]] 88/125|AndyLong1211喜欢的音乐|对面的女孩看过来
+[[ORG_MISS]] 对面的女孩看过来
+[[ORG]] 89/125|AndyLong1211喜欢的音乐|90
+[[ORG_MISS]] 90
+[[ORG]] 90/125|AndyLong1211喜欢的音乐|Sowing The Seeds Of Love
+[[ORG_MISS]] Sowing The Seeds Of Love
+[[ORG]] 91/125|AndyLong1211喜欢的音乐|勇气
+[[ORG_MISS]] 勇气
+[[ORG]] 92/125|AndyLong1211喜欢的音乐|勇气 (New Remix)
+[[ORG_MISS]] 勇气 (New Remix)
+[[ORG]] 93/125|AndyLong1211喜欢的音乐|Dear God
+[[ORG_MISS]] Dear God
+[[ORG]] 94/125|AndyLong1211喜欢的音乐|Live Forever
+[[ORG_MISS]] Live Forever
+[[ORG]] 95/125|AndyLong1211喜欢的音乐|Sowing the Seeds of Love
+[[ORG_MISS]] Sowing the Seeds of Love
+[[ORG]] 96/125|AndyLong1211喜欢的音乐|不应该
+[[ORG_MISS]] 不应该
+[[ORG]] 97/125|AndyLong1211喜欢的音乐|十七岁
+[[ORG_MISS]] 十七岁
+[[ORG]] 98/125|AndyLong1211喜欢的音乐|信心花舍
+[[ORG_MISS]] 信心花舍
+[[ORG]] 99/125|AndyLong1211喜欢的音乐|幸福摩天轮(Live)
+[[ORG_MISS]] 幸福摩天轮(Live)
+[[ORG]] 100/125|AndyLong1211喜欢的音乐|歌·颂
+[[ORG_MISS]] 歌·颂
+[[ORG]] 101/125|AndyLong1211喜欢的音乐|Can't Take My Eyes off You
+[[ORG_MISS]] Can't Take My Eyes off You
+[[ORG]] 102/125|AndyLong1211喜欢的音乐|可惜我是水瓶座
+[[ORG_MISS]] 可惜我是水瓶座
+[[ORG]] 103/125|AndyLong1211喜欢的音乐|Somebody to Love
+[[ORG_MISS]] Somebody to Love
+[[ORG]] 104/125|AndyLong1211喜欢的音乐|Antisocial
+[[ORG_MISS]] Antisocial
+[[ORG]] 105/125|AndyLong1211喜欢的音乐|Los Angeles (Live)
+[[ORG_MISS]] Los Angeles (Live)
+[[ORG]] 106/125|AndyLong1211喜欢的音乐|十面埋伏 (Live)
+[[ORG_MISS]] 十面埋伏 (Live)
+[[ORG]] 107/125|AndyLong1211喜欢的音乐|She Will Be Loved
+[[ORG_MISS]] She Will Be Loved
+[[ORG]] 108/125|AndyLong1211喜欢的音乐|Alone Again
+[[ORG_MISS]] Alone Again
+[[ORG]] 109/125|AndyLong1211喜欢的音乐|Won't Go Home Without You
+[[ORG_MISS]] Won't Go Home Without You
+[[ORG]] 110/125|AndyLong1211喜欢的音乐|Queen at Live Aid 1985
+[[ORG_MISS]] Queen at Live Aid 1985
+[[ORG]] 111/125|AndyLong1211喜欢的音乐|American Pie
+[[ORG_MISS]] American Pie
+[[ORG]] 112/125|AndyLong1211喜欢的音乐|Just A Feeling
+[[ORG_MISS]] Just A Feeling
+[[ORG]] 113/125|AndyLong1211喜欢的音乐|Let Me Go Home, Whiskey
+[[ORG_MISS]] Let Me Go Home, Whiskey
+[[ORG]] 114/125|AndyLong1211喜欢的音乐|Under Pressure (2011 Remaster)
+[[ORG_MISS]] Under Pressure (2011 Remaster)
+[[ORG]] 115/125|AndyLong1211喜欢的音乐|Do Ya Like
+[[ORG_MISS]] Do Ya Like
+[[ORG]] 116/125|AndyLong1211喜欢的音乐|Hide
+[[ORG_MISS]] Hide
+[[ORG]] 117/125|AndyLong1211喜欢的音乐|Closer
+[[ORG_MISS]] Closer
+[[ORG]] 118/125|AndyLong1211喜欢的音乐|Photograph
+[[ORG_MISS]] Photograph
+[[ORG]] 119/125|AndyLong1211喜欢的音乐|脏话阿七 (Live)
+[[ORG_MISS]] 脏话阿七 (Live)
+[[ORG]] 120/125|AndyLong1211喜欢的音乐|Night Changes
+[[ORG_MISS]] Night Changes
+[[ORG]] 121/125|AndyLong1211喜欢的音乐|无条件
+[[ORG_MISS]] 无条件
+[[ORG]] 122/125|AndyLong1211喜欢的音乐|人来人往 (Live)
+[[ORG_MISS]] 人来人往 (Live)
+[[ORG]] 123/125|AndyLong1211喜欢的音乐|Prettiest Friend (Demo)
+[[ORG_MISS]] Prettiest Friend (Demo)
+[[ORG]] 124/125|AndyLong1211喜欢的音乐|Yellow
+[[ORG_MISS]] Yellow
+[[ORG]] 125/125|AndyLong1211喜欢的音乐|honeysea
+[[ORG_MISS]] honeysea
+[done] [playlists] AndyLong1211喜欢的音乐 -> copied=2, missing=123
+[[ORG]] 1/33|Dec. 2025|飞了
+[[ORG_MISS]] 飞了
+[[ORG]] 2/33|Dec. 2025|嫉妒
+[[ORG_MISS]] 嫉妒
+[[ORG]] 3/33|Dec. 2025|梦伴
+[[ORG_MISS]] 梦伴
+[[ORG]] 4/33|Dec. 2025|赏味期限
+[[ORG_MISS]] 赏味期限
+[[ORG]] 5/33|Dec. 2025|给我爱过的男孩们
+[[ORG_MISS]] 给我爱过的男孩们
+[[ORG]] 6/33|Dec. 2025|一枝花
+[[ORG_MISS]] 一枝花
+[[ORG]] 7/33|Dec. 2025|你一半我一半
+[[ORG_MISS]] 你一半我一半
+[[ORG]] 8/33|Dec. 2025|高级动物
+[[ORG_MISS]] 高级动物
+[[ORG]] 9/33|Dec. 2025|不是我不明白
+[[ORG_MISS]] 不是我不明白
+[[ORG]] 10/33|Dec. 2025|Oh! Darling (Remastered)
+[[ORG_MISS]] Oh! Darling (Remastered)
+[[ORG]] 11/33|Dec. 2025|I Want You (She's So Heavy) (Remastered)
+[[ORG_MISS]] I Want You (She's So Heavy) (Remastered)
+[[ORG]] 12/33|Dec. 2025|Last Christmas
+[[ORG_MISS]] Last Christmas
+[[ORG]] 13/33|Dec. 2025|体会
+[[ORG_MISS]] 体会
+[[ORG]] 14/33|Dec. 2025|脸谱
+[[ORG_MISS]] 脸谱
+[[ORG]] 15/33|Dec. 2025|别来纠缠我
+[[ORG_MISS]] 别来纠缠我
+[[ORG]] 16/33|Dec. 2025|Don't Break My Heart
+[[ORG_MISS]] Don't Break My Heart
+[[ORG]] 17/33|Dec. 2025|美雪 美雪
+[[ORG_MISS]] 美雪 美雪
+[[ORG]] 18/33|Dec. 2025|大雄
+[[ORG_MISS]] 大雄
+[[ORG]] 19/33|Dec. 2025|Don't Break My Heart (Live)
+[[ORG_MISS]] Don't Break My Heart (Live)
+[[ORG]] 20/33|Dec. 2025|Perfect Day
+[[ORG_MISS]] Perfect Day
+[[ORG]] 21/33|Dec. 2025|波兰首都是上海
+[[ORG_MISS]] 波兰首都是上海
+[[ORG]] 22/33|Dec. 2025|开始懂了
+[[ORG_MISS]] 开始懂了
+[[ORG]] 23/33|Dec. 2025|Can't Take My Eyes Off You
+[[ORG_MISS]] Can't Take My Eyes Off You
+[[ORG]] 24/33|Dec. 2025|阴天
+[[ORG_MISS]] 阴天
+[[ORG]] 25/33|Dec. 2025|Like a Rolling Stone
+[[ORG_MISS]] Like a Rolling Stone
+[[ORG]] 26/33|Dec. 2025|热带雨林
+[[ORG_MISS]] 热带雨林
+[[ORG]] 27/33|Dec. 2025|人工智能
+[[ORG_MISS]] 人工智能
+[[ORG]] 28/33|Dec. 2025|你快乐所以我快乐
+[[ORG_MISS]] 你快乐所以我快乐
+[[ORG]] 29/33|Dec. 2025|怀念
+[[ORG_MISS]] 怀念
+[[ORG]] 30/33|Dec. 2025|唱一首好歌
+[[ORG_MISS]] 唱一首好歌
+[[ORG]] 31/33|Dec. 2025|这是爱
+[[ORG_MISS]] 这是爱
+[[ORG]] 32/33|Dec. 2025|深夜港湾
+[[ORG_MISS]] 深夜港湾
+[[ORG]] 33/33|Dec. 2025|拒绝再玩
+[[ORG_MISS]] 拒绝再玩
+[done] [playlists] Dec. 2025 -> copied=0, missing=33
+[[ORG]] 1/26|Jan. 2026|于是
+[[ORG]] 2/26|Jan. 2026|I Want My Life Back
+[[ORG]] 3/26|Jan. 2026|Mr. Right
+[[ORG]] 4/26|Jan. 2026|梦伴 (Live)
+[[ORG_MISS]] 梦伴 (Live)
+[[ORG]] 5/26|Jan. 2026|一人有一个梦想
+[[ORG_MISS]] 一人有一个梦想
+[[ORG]] 6/26|Jan. 2026|祝福
+[[ORG_MISS]] 祝福
+[[ORG]] 7/26|Jan. 2026|让我一次爱个够
+[[ORG_MISS]] 让我一次爱个够
+[[ORG]] 8/26|Jan. 2026|特别的爱给特别的你
+[[ORG_MISS]] 特别的爱给特别的你
+[[ORG]] 9/26|Jan. 2026|1984
+[[ORG_MISS]] 1984
+[[ORG]] 10/26|Jan. 2026|少年，安啦！
+[[ORG_MISS]] 少年，安啦！
+[[ORG]] 11/26|Jan. 2026|夏夜晚风
+[[ORG_MISS]] 夏夜晚风
+[[ORG]] 12/26|Jan. 2026|爱情的尽头
+[[ORG_MISS]] 爱情的尽头
+[[ORG]] 13/26|Jan. 2026|背叛
+[[ORG_MISS]] 背叛
+[[ORG]] 14/26|Jan. 2026|積木遊び
+[[ORG_MISS]] 積木遊び
+[[ORG]] 15/26|Jan. 2026|翅膀
+[[ORG_MISS]] 翅膀
+[[ORG]] 16/26|Jan. 2026|断了
+[[ORG_MISS]] 断了
+[[ORG]] 17/26|Jan. 2026|一点点
+[[ORG_MISS]] 一点点
+[[ORG]] 18/26|Jan. 2026|要多美丽有多美丽 (人山人海 Version)
+[[ORG_MISS]] 要多美丽有多美丽 (人山人海 Version)
+[[ORG]] 19/26|Jan. 2026|无人驾驶
+[[ORG_MISS]] 无人驾驶
+[[ORG]] 20/26|Jan. 2026|时代的晚上
+[[ORG_MISS]] 时代的晚上
+[[ORG]] 21/26|Jan. 2026|春节
+[[ORG_MISS]] 春节
+[[ORG]] 22/26|Jan. 2026|另一个空间
+[[ORG_MISS]] 另一个空间
+[[ORG]] 23/26|Jan. 2026|缓冲
+[[ORG_MISS]] 缓冲
+[[ORG]] 24/26|Jan. 2026|无能的力量
+[[ORG_MISS]] 无能的力量
+[[ORG]] 25/26|Jan. 2026|混子
+[[ORG_MISS]] 混子
+[[ORG]] 26/26|Jan. 2026|现象七十二变
+[[ORG_MISS]] 现象七十二变
+[done] [playlists] Jan. 2026 -> copied=3, missing=23
+[[ORG]] 1/50|playlist_13350084792|新长征路上的摇滚
+[[ORG_MISS]] 新长征路上的摇滚
+[[ORG]] 2/50|playlist_13350084792|花房姑娘
+[[ORG_MISS]] 花房姑娘
+[[ORG]] 3/50|playlist_13350084792|假行僧
+[[ORG_MISS]] 假行僧
+[[ORG]] 4/50|playlist_13350084792|从头再来
+[[ORG_MISS]] 从头再来
+[[ORG]] 5/50|playlist_13350084792|快让我在雪地上撒点儿野
+[[ORG_MISS]] 快让我在雪地上撒点儿野
+[[ORG]] 6/50|playlist_13350084792|红旗下的蛋
+[[ORG_MISS]] 红旗下的蛋
+[[ORG]] 7/50|playlist_13350084792|蓝色骨头
+[[ORG_MISS]] 蓝色骨头
+[[ORG]] 8/50|playlist_13350084792|宽容
+[[ORG_MISS]] 宽容
+[[ORG]] 9/50|playlist_13350084792|不是我不明白
+[[ORG_MISS]] 不是我不明白
+[[ORG]] 10/50|playlist_13350084792|南泥湾
+[[ORG_MISS]] 南泥湾
+[[ORG]] 11/50|playlist_13350084792|飞了
+[[ORG_MISS]] 飞了
+[[ORG]] 12/50|playlist_13350084792|不再掩饰
+[[ORG_MISS]] 不再掩饰
+[[ORG]] 13/50|playlist_13350084792|让我睡个好觉
+[[ORG_MISS]] 让我睡个好觉
+[[ORG]] 14/50|playlist_13350084792|农村包围城市
+[[ORG_MISS]] 农村包围城市
+[[ORG]] 15/50|playlist_13350084792|是否
+[[ORG_MISS]] 是否
+[[ORG]] 16/50|playlist_13350084792|草帽歌
+[[ORG_MISS]] 草帽歌
+[[ORG]] 17/50|playlist_13350084792|混子
+[[ORG_MISS]] 混子
+[[ORG]] 18/50|playlist_13350084792|快让我在这雪地上撒点野
+[[ORG_MISS]] 快让我在这雪地上撒点野
+[[ORG]] 19/50|playlist_13350084792|出走
+[[ORG_MISS]] 出走
+[[ORG]] 20/50|playlist_13350084792|继续
+[[ORG_MISS]] 继续
+[[ORG]] 21/50|playlist_13350084792|最后的抱怨
+[[ORG_MISS]] 最后的抱怨
+[[ORG]] 22/50|playlist_13350084792|解决
+[[ORG_MISS]] 解决
+[[ORG]] 23/50|playlist_13350084792|飞狗
+[[ORG_MISS]] 飞狗
+[[ORG]] 24/50|playlist_13350084792|时代的晚上
+[[ORG_MISS]] 时代的晚上
+[[ORG]] 25/50|playlist_13350084792|快让我在这雪地上撒点儿野
+[[ORG_MISS]] 快让我在这雪地上撒点儿野
+[[ORG]] 26/50|playlist_13350084792|迷失的季节
+[[ORG_MISS]] 迷失的季节
+[[ORG]] 27/50|playlist_13350084792|让世界充满爱-走向明天
+[[ORG_MISS]] 让世界充满爱-走向明天
+[[ORG]] 28/50|playlist_13350084792|彼岸
+[[ORG_MISS]] 彼岸
+[[ORG]] 29/50|playlist_13350084792|鱼鸟之恋(Live)
+[[ORG_MISS]] 鱼鸟之恋(Live)
+[[ORG]] 30/50|playlist_13350084792|时间的B面
+[[ORG_MISS]] 时间的B面
+[[ORG]] 31/50|playlist_13350084792|像一把刀子 (Live)
+[[ORG_MISS]] 像一把刀子 (Live)
+[[ORG]] 32/50|playlist_13350084792|投机分子
+[[ORG_MISS]] 投机分子
+[[ORG]] 33/50|playlist_13350084792|这儿的空间
+[[ORG_MISS]] 这儿的空间
+[[ORG]] 34/50|playlist_13350084792|让世界充满爱-幸福平安
+[[ORG_MISS]] 让世界充满爱-幸福平安
+[[ORG]] 35/50|playlist_13350084792|让世界充满爱-永不分离
+[[ORG_MISS]] 让世界充满爱-永不分离
+[[ORG]] 36/50|playlist_13350084792|寂寞就象一团烈火
+[[ORG_MISS]] 寂寞就象一团烈火
+[[ORG]] 37/50|playlist_13350084792|超越那一天
+[[ORG_MISS]] 超越那一天
+[[ORG]] 38/50|playlist_13350084792|无能的力量
+[[ORG_MISS]] 无能的力量
+[[ORG]] 39/50|playlist_13350084792|另一个空间
+[[ORG_MISS]] 另一个空间
+[[ORG]] 40/50|playlist_13350084792|春节
+[[ORG_MISS]] 春节
+[[ORG]] 41/50|playlist_13350084792|死不回头
+[[ORG_MISS]] 死不回头
+[[ORG]] 42/50|playlist_13350084792|留守者
+[[ORG_MISS]] 留守者
+[[ORG]] 43/50|playlist_13350084792|末日海滩
+[[ORG_MISS]] 末日海滩
+[[ORG]] 44/50|playlist_13350084792|光冻
+[[ORG_MISS]] 光冻
+[[ORG]] 45/50|playlist_13350084792|爱情量子定律
+[[ORG_MISS]] 爱情量子定律
+[[ORG]] 46/50|playlist_13350084792|兔子牛
+[[ORG_MISS]] 兔子牛
+[[ORG]] 47/50|playlist_13350084792|舞过38线
+[[ORG_MISS]] 舞过38线
+[[ORG]] 48/50|playlist_13350084792|缓冲
+[[ORG_MISS]] 缓冲
+[[ORG]] 49/50|playlist_13350084792|网络处男
+[[ORG_MISS]] 网络处男
+[[ORG]] 50/50|playlist_13350084792|九十年代
+[[ORG_MISS]] 九十年代
+[done] [playlists] playlist_13350084792 -> copied=0, missing=50
+[[ORG]] 1/11|playlist_14102254023|勇气
+[[ORG_MISS]] 勇气
+[[ORG]] 2/11|playlist_14102254023|好想要挥霍
+[[ORG_MISS]] 好想要挥霍
+[[ORG]] 3/11|playlist_14102254023|Every Breath You Take
+[[ORG_MISS]] Every Breath You Take
+[[ORG]] 4/11|playlist_14102254023|スーパースター
+[[ORG_MISS]] スーパースター
+[[ORG]] 5/11|playlist_14102254023|化粧直し
+[[ORG_MISS]] 化粧直し
+[[ORG]] 6/11|playlist_14102254023|喧嘩上等(Active Fighting)
+[[ORG_MISS]] 喧嘩上等(Active Fighting)
+[[ORG]] 7/11|playlist_14102254023|修羅場 adult ver.
+[[ORG_MISS]] 修羅場 adult ver.
+[[ORG]] 8/11|playlist_14102254023|秘密(A Secret)
+[[ORG_MISS]] 秘密(A Secret)
+[[ORG]] 9/11|playlist_14102254023|アンコンディショナル・ラブ
+[[ORG_MISS]] アンコンディショナル・ラブ
+[[ORG]] 10/11|playlist_14102254023|実録 -新宿にて- 丸ノ内サディスティック ～ 歌舞伎町の女王
+[[ORG_MISS]] 実録 -新宿にて- 丸ノ内サディスティック ～ 歌舞伎町の女王
+[[ORG]] 11/11|playlist_14102254023|歌舞伎町の女王
+[[ORG_MISS]] 歌舞伎町の女王
+[done] [playlists] playlist_14102254023 -> copied=0, missing=11
+[[ORG]] 1/23|playlist_17455699272|honeysea
+[[ORG_MISS]] honeysea
+[[ORG]] 2/23|playlist_17455699272|Yellow
+[[ORG_MISS]] Yellow
+[[ORG]] 3/23|playlist_17455699272|Prettiest Friend (Demo)
+[[ORG_MISS]] Prettiest Friend (Demo)
+[[ORG]] 4/23|playlist_17455699272|人来人往 (Live)
+[[ORG_MISS]] 人来人往 (Live)
+[[ORG]] 5/23|playlist_17455699272|She Will Be Loved
+[[ORG_MISS]] She Will Be Loved
+[[ORG]] 6/23|playlist_17455699272|可惜我是水瓶座
+[[ORG_MISS]] 可惜我是水瓶座
+[[ORG]] 7/23|playlist_17455699272|幸福摩天轮(Live)
+[[ORG_MISS]] 幸福摩天轮(Live)
+[[ORG]] 8/23|playlist_17455699272|信心花舍
+[[ORG_MISS]] 信心花舍
+[[ORG]] 9/23|playlist_17455699272|不应该
+[[ORG_MISS]] 不应该
+[[ORG]] 10/23|playlist_17455699272|路口
+[[ORG_MISS]] 路口
+[[ORG]] 11/23|playlist_17455699272|勇气 (New Remix)
+[[ORG_MISS]] 勇气 (New Remix)
+[[ORG]] 12/23|playlist_17455699272|勇气
+[[ORG_MISS]] 勇气
+[[ORG]] 13/23|playlist_17455699272|Shouldn't Have to Be Like That
+[[ORG_MISS]] Shouldn't Have to Be Like That
+[[ORG]] 14/23|playlist_17455699272|I Love You So
+[[ORG_MISS]] I Love You So
+[[ORG]] 15/23|playlist_17455699272|1973
+[[ORG_MISS]] 1973
+[[ORG]] 16/23|playlist_17455699272|左右手
+[[ORG_MISS]] 左右手
+[[ORG]] 17/23|playlist_17455699272|还是会寂寞 (Live)
+[[ORG_MISS]] 还是会寂寞 (Live)
+[[ORG]] 18/23|playlist_17455699272|小步舞曲
+[[ORG_MISS]] 小步舞曲
+[[ORG]] 19/23|playlist_17455699272|素颜
+[[ORG_MISS]] 素颜
+[[ORG]] 20/23|playlist_17455699272|有心人
+[[ORG_MISS]] 有心人
+[[ORG]] 21/23|playlist_17455699272|被动(Live)
+[[ORG_MISS]] 被动(Live)
+[[ORG]] 22/23|playlist_17455699272|忧书
+[[ORG_MISS]] 忧书
+[[ORG]] 23/23|playlist_17455699272|不知所谓
+[[ORG_MISS]] 不知所谓
+[done] [playlists] playlist_17455699272 -> copied=0, missing=23
+[[ORG]] 1/5|playlist_17521192076|软硬
+[[ORG_MISS]] 软硬
+[[ORG]] 2/5|playlist_17521192076|拍膊头
+[[ORG_MISS]] 拍膊头
+[[ORG]] 3/5|playlist_17521192076|Encore
+[[ORG_MISS]] Encore
+[[ORG]] 4/5|playlist_17521192076|亿万少年彼得潘
+[[ORG_MISS]] 亿万少年彼得潘
+[[ORG]] 5/5|playlist_17521192076|细路哥Ⅱ
+[[ORG_MISS]] 细路哥Ⅱ
+[done] [playlists] playlist_17521192076 -> copied=0, missing=5
+[[ORG]] 1/18|playlist_17521275756|丸ノ内サディスティック
+[[ORG_MISS]] 丸ノ内サディスティック
+[[ORG]] 2/18|playlist_17521275756|再见北京
+[[ORG_MISS]] 再见北京
+[[ORG]] 3/18|playlist_17521275756|鼓楼
+[[ORG_MISS]] 鼓楼
+[[ORG]] 4/18|playlist_17521275756|最寂寞的时候
+[[ORG_MISS]] 最寂寞的时候
+[[ORG]] 5/18|playlist_17521275756|100种生活
+[[ORG_MISS]] 100种生活
+[[ORG]] 6/18|playlist_17521275756|无敌铁金钢
+[[ORG_MISS]] 无敌铁金钢
+[[ORG]] 7/18|playlist_17521275756|Boring
+[[ORG_MISS]] Boring
+[[ORG]] 8/18|playlist_17521275756|好想要挥霍
+[[ORG_MISS]] 好想要挥霍
+[[ORG]] 9/18|playlist_17521275756|三里屯的夜
+[[ORG_MISS]] 三里屯的夜
+[[ORG]] 10/18|playlist_17521275756|Man In The Mirror
+[[ORG_MISS]] Man In The Mirror
+[[ORG]] 11/18|playlist_17521275756|I Love You So
+[[ORG_MISS]] I Love You So
+[[ORG]] 12/18|playlist_17521275756|Wrapped Around Your Finger
+[[ORG_MISS]] Wrapped Around Your Finger
+[[ORG]] 13/18|playlist_17521275756|King Of Pain
+[[ORG_MISS]] King Of Pain
+[[ORG]] 14/18|playlist_17521275756|Every Breath You Take
+[[ORG_MISS]] Every Breath You Take
+[[ORG]] 15/18|playlist_17521275756|Shouldn't Have to Be Like That
+[[ORG_MISS]] Shouldn't Have to Be Like That
+[[ORG]] 16/18|playlist_17521275756|Supersonic
+[[ORG_MISS]] Supersonic
+[[ORG]] 17/18|playlist_17521275756|The End Of The World
+[[ORG_MISS]] The End Of The World
+[[ORG]] 18/18|playlist_17521275756|勇气
+[[ORG_MISS]] 勇气
+[done] [playlists] playlist_17521275756 -> copied=0, missing=18
+[[ORG]] 1/14|playlist_17521286883|越来越不懂
+[[ORG_MISS]] 越来越不懂
+[[ORG]] 2/14|playlist_17521286883|红色高跟鞋
+[[ORG_MISS]] 红色高跟鞋
+[[ORG]] 3/14|playlist_17521286883|男人
+[[ORG_MISS]] 男人
+[[ORG]] 4/14|playlist_17521286883|静止
+[[ORG_MISS]] 静止
+[[ORG]] 5/14|playlist_17521286883|腐朽
+[[ORG_MISS]] 腐朽
+[[ORG]] 6/14|playlist_17521286883|Sentimental Kills
+[[ORG_MISS]] Sentimental Kills
+[[ORG]] 7/14|playlist_17521286883|华丽的冒险
+[[ORG_MISS]] 华丽的冒险
+[[ORG]] 8/14|playlist_17521286883|太多
+[[ORG_MISS]] 太多
+[[ORG]] 9/14|playlist_17521286883|花的姿态
+[[ORG_MISS]] 花的姿态
+[[ORG]] 10/14|playlist_17521286883|Self
+[[ORG_MISS]] Self
+[[ORG]] 11/14|playlist_17521286883|80%完美的日子
+[[ORG_MISS]] 80%完美的日子
+[[ORG]] 12/14|playlist_17521286883|表面的和平
+[[ORG_MISS]] 表面的和平
+[[ORG]] 13/14|playlist_17521286883|静静的生活
+[[ORG_MISS]] 静静的生活
+[[ORG]] 14/14|playlist_17521286883|最初的起点
+[[ORG_MISS]] 最初的起点
+[done] [playlists] playlist_17521286883 -> copied=0, missing=14
+[[ORG]] 1/21|playlist_17521346639|夏末的歌
+[[ORG_MISS]] 夏末的歌
+[[ORG]] 2/21|playlist_17521346639|必杀技
+[[ORG_MISS]] 必杀技
+[[ORG]] 3/21|playlist_17521346639|稻草上的火鸡
+[[ORG_MISS]] 稻草上的火鸡
+[[ORG]] 4/21|playlist_17521346639|破灭
+[[ORG_MISS]] 破灭
+[[ORG]] 5/21|playlist_17521346639|回不去的夏天
+[[ORG_MISS]] 回不去的夏天
+[[ORG]] 6/21|playlist_17521346639|想去海边
+[[ORG_MISS]] 想去海边
+[[ORG]] 7/21|playlist_17521346639|雨水一盒
+[[ORG_MISS]] 雨水一盒
+[[ORG]] 8/21|playlist_17521346639|华生
+[[ORG_MISS]] 华生
+[[ORG]] 9/21|playlist_17521346639|披星戴月的想你
+[[ORG_MISS]] 披星戴月的想你
+[[ORG]] 10/21|playlist_17521346639|给你一瓶魔法药水
+[[ORG_MISS]] 给你一瓶魔法药水
+[[ORG]] 11/21|playlist_17521346639|爱人错过
+[[ORG_MISS]] 爱人错过
+[[ORG]] 12/21|playlist_17521346639|California
+[[ORG_MISS]] California
+[[ORG]] 13/21|playlist_17521346639|微笑
+[[ORG_MISS]] 微笑
+[[ORG]] 14/21|playlist_17521346639|玛卡瑞纳
+[[ORG_MISS]] 玛卡瑞纳
+[[ORG]] 15/21|playlist_17521346639|男孩别哭
+[[ORG_MISS]] 男孩别哭
+[[ORG]] 16/21|playlist_17521346639|初哥
+[[ORG_MISS]] 初哥
+[[ORG]] 17/21|playlist_17521346639|深紫色高跟鞋
+[[ORG_MISS]] 深紫色高跟鞋
+[[ORG]] 18/21|playlist_17521346639|你懂不懂？
+[[ORG_MISS]] 你懂不懂？
+[[ORG]] 19/21|playlist_17521346639|自由人
+[[ORG_MISS]] 自由人
+[[ORG]] 20/21|playlist_17521346639|离开我吧
+[[ORG_MISS]] 离开我吧
+[[ORG]] 21/21|playlist_17521346639|忧书
+[[ORG_MISS]] 忧书
+[done] [playlists] playlist_17521346639 -> copied=0, missing=21
+[[ORG]] 1/16|playlist_5178167638|乌兰巴托的夜
+[[ORG_MISS]] 乌兰巴托的夜
+[[ORG]] 2/16|playlist_5178167638|雨夜的浪漫
+[[ORG_MISS]] 雨夜的浪漫
+[[ORG]] 3/16|playlist_5178167638|威廉退尔进行曲
+[[ORG_MISS]] 威廉退尔进行曲
+[[ORG]] 4/16|playlist_5178167638|天后
+[[ORG_MISS]] 天后
+[[ORG]] 5/16|playlist_5178167638|Stardom
+[[ORG_MISS]] Stardom
+[[ORG]] 6/16|playlist_5178167638|富士山下
+[[ORG_MISS]] 富士山下
+[[ORG]] 7/16|playlist_5178167638|Dreamcatcher
+[[ORG_MISS]] Dreamcatcher
+[[ORG]] 8/16|playlist_5178167638|Water Caress
+[[ORG_MISS]] Water Caress
+[[ORG]] 9/16|playlist_5178167638|Music Box Dancer
+[[ORG_MISS]] Music Box Dancer
+[[ORG]] 10/16|playlist_5178167638|You Save My Life (12 Inch Mix)
+[[ORG_MISS]] You Save My Life (12 Inch Mix)
+[[ORG]] 11/16|playlist_5178167638|光荣绽放 (伴奏)
+[[ORG_MISS]] 光荣绽放 (伴奏)
+[[ORG]] 12/16|playlist_5178167638|Never Really Over
+[[ORG_MISS]] Never Really Over
+[[ORG]] 13/16|playlist_5178167638|月半小夜曲
+[[ORG_MISS]] 月半小夜曲
+[[ORG]] 14/16|playlist_5178167638|摘星的晚上
+[[ORG_MISS]] 摘星的晚上
+[[ORG]] 15/16|playlist_5178167638|奇迹再现
+[[ORG_MISS]] 奇迹再现
+[[ORG]] 16/16|playlist_5178167638|I'm the One
+[[ORG_MISS]] I'm the One
+[done] [playlists] playlist_5178167638 -> copied=0, missing=16
+[[ORG]] 1/32|playlist_dailyRecommend_480159458|投机分子
+[[ORG_MISS]] 投机分子
+[[ORG]] 2/32|playlist_dailyRecommend_480159458|Good Times
+[[ORG_MISS]] Good Times
+[[ORG]] 3/32|playlist_dailyRecommend_480159458|Lullaby
+[[ORG_MISS]] Lullaby
+[[ORG]] 4/32|playlist_dailyRecommend_480159458|Strawberry Fields Forever (Remastered)
+[[ORG_MISS]] Strawberry Fields Forever (Remastered)
+[[ORG]] 5/32|playlist_dailyRecommend_480159458|在凌晨
+[[ORG_MISS]] 在凌晨
+[[ORG]] 6/32|playlist_dailyRecommend_480159458|Hotel California (2013 Remaster)
+[[ORG_MISS]] Hotel California (2013 Remaster)
+[[ORG]] 7/32|playlist_dailyRecommend_480159458|Never Give Up On Love
+[[ORG]] 8/32|playlist_dailyRecommend_480159458|Here Comes Your Man
+[[ORG_MISS]] Here Comes Your Man
+[[ORG]] 9/32|playlist_dailyRecommend_480159458|黑暗中漫舞
+[[ORG_MISS]] 黑暗中漫舞
+[[ORG]] 10/32|playlist_dailyRecommend_480159458|That's What I Like
+[[ORG_MISS]] That's What I Like
+[[ORG]] 11/32|playlist_dailyRecommend_480159458|Paradise City
+[[ORG_MISS]] Paradise City
+[[ORG]] 12/32|playlist_dailyRecommend_480159458|I'M O.K. (Live)
+[[ORG_MISS]] I'M O.K. (Live)
+[[ORG]] 13/32|playlist_dailyRecommend_480159458|My Sweet Lord (2014 Remaster)
+[[ORG_MISS]] My Sweet Lord (2014 Remaster)
+[[ORG]] 14/32|playlist_dailyRecommend_480159458|Waterfall
+[[ORG_MISS]] Waterfall
+[[ORG]] 15/32|playlist_dailyRecommend_480159458|两个寂寞
+[[ORG_MISS]] 两个寂寞
+[[ORG]] 16/32|playlist_dailyRecommend_480159458|金黄色的
+[[ORG_MISS]] 金黄色的
+[[ORG]] 17/32|playlist_dailyRecommend_480159458|幻觉
+[[ORG_MISS]] 幻觉
+[[ORG]] 18/32|playlist_dailyRecommend_480159458|回家
+[[ORG_MISS]] 回家
+[[ORG]] 19/32|playlist_dailyRecommend_480159458|Aladdin Sane (2013 Remastered Version)
+[[ORG_MISS]] Aladdin Sane (2013 Remastered Version)
+[[ORG]] 20/32|playlist_dailyRecommend_480159458|喜欢
+[[ORG_MISS]] 喜欢
+[[ORG]] 21/32|playlist_dailyRecommend_480159458|不得不
+[[ORG_MISS]] 不得不
+[[ORG]] 22/32|playlist_dailyRecommend_480159458|分心
+[[ORG_MISS]] 分心
+[[ORG]] 23/32|playlist_dailyRecommend_480159458|改变
+[[ORG_MISS]] 改变
+[[ORG]] 24/32|playlist_dailyRecommend_480159458|New Dawn Fades
+[[ORG_MISS]] New Dawn Fades
+[[ORG]] 25/32|playlist_dailyRecommend_480159458|摩擦
+[[ORG_MISS]] 摩擦
+[[ORG]] 26/32|playlist_dailyRecommend_480159458|点绛唇
+[[ORG_MISS]] 点绛唇
+[[ORG]] 27/32|playlist_dailyRecommend_480159458|分裂
+[[ORG_MISS]] 分裂
+[[ORG]] 28/32|playlist_dailyRecommend_480159458|风吹过下雨天
+[[ORG_MISS]] 风吹过下雨天
+[[ORG]] 29/32|playlist_dailyRecommend_480159458|一起去旅行
+[[ORG_MISS]] 一起去旅行
+[[ORG]] 30/32|playlist_dailyRecommend_480159458|Love For Free
+[[ORG_MISS]] Love For Free
+[[ORG]] 31/32|playlist_dailyRecommend_480159458|校园歌手
+[[ORG_MISS]] 校园歌手
+[[ORG]] 32/32|playlist_dailyRecommend_480159458|这一年这一夜
+[[ORG_MISS]] 这一年这一夜
+[done] [playlists] playlist_dailyRecommend_480159458 -> copied=1, missing=31
+[[ORG]] 1/20|车载粤语|想你
+[[ORG_MISS]] 想你
+[[ORG]] 2/20|车载粤语|还有什么可以送给你
+[[ORG_MISS]] 还有什么可以送给你
+[[ORG]] 3/20|车载粤语|幸福摩天轮(Live)
+[[ORG_MISS]] 幸福摩天轮(Live)
+[[ORG]] 4/20|车载粤语|信心花舍
+[[ORG_MISS]] 信心花舍
+[[ORG]] 5/20|车载粤语|左右手
+[[ORG_MISS]] 左右手
+[[ORG]] 6/20|车载粤语|必杀技
+[[ORG_MISS]] 必杀技
+[[ORG]] 7/20|车载粤语|要多美丽有多美丽 (人山人海 Version)
+[[ORG_MISS]] 要多美丽有多美丽 (人山人海 Version)
+[[ORG]] 8/20|车载粤语|半点心
+[[ORG_MISS]] 半点心
+[[ORG]] 9/20|车载粤语|Encore
+[[ORG_MISS]] Encore
+[[ORG]] 10/20|车载粤语|忧书
+[[ORG_MISS]] 忧书
+[[ORG]] 11/20|车载粤语|深夜港湾
+[[ORG_MISS]] 深夜港湾
+[[ORG]] 12/20|车载粤语|人工智能
+[[ORG_MISS]] 人工智能
+[[ORG]] 13/20|车载粤语|热带雨林
+[[ORG_MISS]] 热带雨林
+[[ORG]] 14/20|车载粤语|大雄
+[[ORG_MISS]] 大雄
+[[ORG]] 15/20|车载粤语|美雪 美雪
+[[ORG_MISS]] 美雪 美雪
+[[ORG]] 16/20|车载粤语|你一半我一半
+[[ORG_MISS]] 你一半我一半
+[[ORG]] 17/20|车载粤语|给我爱过的男孩们
+[[ORG_MISS]] 给我爱过的男孩们
+[[ORG]] 18/20|车载粤语|赏味期限
+[[ORG_MISS]] 赏味期限
+[[ORG]] 19/20|车载粤语|梦伴
+[[ORG_MISS]] 梦伴
+[[ORG]] 20/20|车载粤语|1984
+[[ORG_MISS]] 1984
+[done] [playlists] 车载粤语 -> copied=0, missing=20
+
+organize finished:
+- target: E:\Andy\Junior_I_2025\编程\NetEastCloudMusic_tool\organized_music
+- processed lists: 43
+- skipped lists: 0
+- copied files: 30
+
+全流程完成！
+[[DONE]]
+整理结果目录：E:\Andy\Junior_I_2025\编程\NetEastCloudMusic_tool\organized_music
+
+[[CLEANUP]] start
+cleanup completed
+[[CLEANUP_DONE]]
+
+按任意键退出...
